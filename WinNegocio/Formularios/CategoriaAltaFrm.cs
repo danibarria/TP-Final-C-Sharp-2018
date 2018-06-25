@@ -38,14 +38,7 @@ namespace WinNegocio.Formularios
             nuevaCategoria = new Categoria();
 
             nuevaCategoria.NombreCategoria = this.AltaCategoria.Text;
-            if (nuevaCategoria.findbykey(this.AltaCategoria.Text).CategoriaId > 0)
-            {
-                Console.WriteLine("ya existe");
-            }
-            else
-            {
-                nuevaCategoria.saveObj();
-            }
+            nuevaCategoria.saveObj();
             
             this.Dispose(); //cerrar ventana
         }

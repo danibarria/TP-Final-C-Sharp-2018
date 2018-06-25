@@ -112,5 +112,17 @@ namespace WinNegocio.Formularios
             pbusq.NewListado();
             pbusq.Show();
         }
+
+        private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            CategoriaAltaFrm frm = new CategoriaAltaFrm();
+            frm.ShowDialog();
+        }
+
+        private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            CategoriaBusqFrm frm = new CategoriaBusqFrm();
+            frm.ShowDialog();
+        }
     }
 }
