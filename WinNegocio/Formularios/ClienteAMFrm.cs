@@ -57,10 +57,11 @@ namespace WinNegocio.Formularios
                      //cl.ClienteId = Convert.ToInt32(this.IdMsk.Text);
                  }
                /* Comprobar que esten los datos obligatorios*/
-                 cl.NombreCia = this.CedulaRucTxt.Text;
-                 cl.CedulaRuc = this.NombreCiaTxt.Text;
+                 cl.NombreCia = this.NombreCiaTxt.Text;
+                 cl.CedulaRuc = this.CedulaRucTxt.Text; 
                  cl.NombreContacto = this.ContactoTxt.Text;
                  cl.DirCliente = this.DireccionTxt.Text;
+                 cl.Fax = this.FaxTxt.Text;
                  cl.Email = this.EmailTxt.Text;
                  cl.Celular = this.CelularTxt.Text;
                  cl.Fijo = this.FijoTxt.Text;
@@ -76,7 +77,7 @@ namespace WinNegocio.Formularios
                  MessageBox.Show("Error al intentar " + (operacion == OperacionForm.frmAlta ?"ingresar nuevo Cliente":"actualizar informacion") + ex.Message, "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
                  return;
              }
-           _frmGrid.ReloadGrid();
+           //_frmGrid.ReloadGrid();
             this.Dispose();
         }
 

@@ -10,11 +10,18 @@ using LibNegocio.db;
 
 namespace WinNegocio.Formularios
 {
+   
     public partial class ClientesResultsFrm : Form, IFormGridReload
     {
+        OperacionForm operacion = OperacionForm.frmModificacion;
+  
         public ClientesResultsFrm()
         {
             InitializeComponent();
+        }
+        public void NewListado()
+        {
+            this.operacion = OperacionForm.frmConsulta;
         }
 
         public void ResultadosCliente(string cedularuc = null, string nombrecia = null)
@@ -116,9 +123,16 @@ namespace WinNegocio.Formularios
 
         private void gridClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            ClienteAMFrm frm = new ClienteAMFrm();
+            if (this.operacion == OperacionForm.frmModificacion)
+            {
+                ClienteAMFrm frm = new ClienteAMFrm();
+                frm.ShowCliente((this.gridClientes.Rows[e.RowIndex].DataBoundItem as Cliente), this);
+            }      
+        }
 
-            frm.ShowCliente((this.gridClientes.Rows[e.RowIndex].DataBoundItem as Cliente),this );
+        private void gridClientes_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

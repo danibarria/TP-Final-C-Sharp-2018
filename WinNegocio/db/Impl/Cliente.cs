@@ -67,6 +67,7 @@ namespace LibNegocio.db
         {
             // "cliente_id", "cedula_ruc", "nombre_cia", "nombre_contacto", "dir_cliente", "fax", "email","celular","fijo" 
             string[] values = { 
+                                (this.IsNew?"":_columns[0] + "=")+String.Format("'{0}'",this._cliente_id), //formato cadena ''
                                 (this.IsNew?"":_columns[1] + "=")+String.Format("'{0}'",this._cedula_ruc), //formato cadena ''
                                 (this.IsNew?"":_columns[2] + "=")+String.Format("'{0}'",this._nombre_cia),//formato cadena ''
                                 (this.IsNew?"":_columns[3] + "=")+String.Format("'{0}'",this._nombre_contacto),//formato cadena ''
