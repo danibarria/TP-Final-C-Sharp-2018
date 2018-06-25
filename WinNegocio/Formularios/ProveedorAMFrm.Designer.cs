@@ -59,7 +59,6 @@
             this.IdMsk.ReadOnly = true;
             this.IdMsk.Size = new System.Drawing.Size(110, 20);
             this.IdMsk.TabIndex = 1;
-
             // 
             // label1
             // 
@@ -85,7 +84,7 @@
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Contacto:";
-           // 
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -93,7 +92,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Celular:";  
+            this.label3.Text = "Celular:";
             // 
             // label4
             // 

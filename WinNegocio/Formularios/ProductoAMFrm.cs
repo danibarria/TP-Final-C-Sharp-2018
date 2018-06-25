@@ -62,7 +62,7 @@ namespace WinNegocio.Formularios
                 prod.ProveedorId = System.Convert.ToInt32(this.IdProveedorTxt.Text, 10);
                 prod.CategoriaId = System.Convert.ToInt32(this.IdCategoriaTxt.Text, 10);
                 prod.Descripcion = this.DescripcionTxt.Text;
-                prod.PrecioUnitario = float.Parse(this.PrecioUnitarioTxt.Text,CultureInfo.InvariantCulture);
+                prod.PrecioUnitario = Convert.ToDouble(this.PrecioUnitarioTxt.Text);
                 prod.Existencia = System.Convert.ToInt32(this.ExistenciaTxt.Text, 10);
 
                 if (!prod.saveObj())
