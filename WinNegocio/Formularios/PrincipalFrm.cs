@@ -130,6 +130,7 @@ namespace WinNegocio.Formularios
             EmpleadoBusqFrm pbusq = new EmpleadoBusqFrm();
             pbusq.NewListado();
             pbusq.Show();
+
         }
     }
 }
