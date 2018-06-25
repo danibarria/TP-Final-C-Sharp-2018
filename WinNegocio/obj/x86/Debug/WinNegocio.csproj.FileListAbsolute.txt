@@ -83,3 +83,4 @@ C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.csp
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaAltaFrm.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaMCFrm.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaBusqFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaResultsFrm.resources
