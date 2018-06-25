@@ -85,8 +85,9 @@ namespace LibNegocio.db
                 AccessDB.conn.Close();
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                System.Console.WriteLine( e.Message);
                 if (tx != null)
                     tx.Rollback();
                 AccessDB.conn.Close();

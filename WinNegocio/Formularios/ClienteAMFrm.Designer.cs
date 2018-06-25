@@ -46,6 +46,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.FijoTxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.FaxTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -123,7 +125,7 @@
             // 
             // AceptarBtn
             // 
-            this.AceptarBtn.Location = new System.Drawing.Point(58, 330);
+            this.AceptarBtn.Location = new System.Drawing.Point(57, 353);
             this.AceptarBtn.Name = "AceptarBtn";
             this.AceptarBtn.Size = new System.Drawing.Size(83, 31);
             this.AceptarBtn.TabIndex = 16;
@@ -133,7 +135,7 @@
             // 
             // CancelarBtn
             // 
-            this.CancelarBtn.Location = new System.Drawing.Point(199, 330);
+            this.CancelarBtn.Location = new System.Drawing.Point(200, 353);
             this.CancelarBtn.Name = "CancelarBtn";
             this.CancelarBtn.Size = new System.Drawing.Size(83, 31);
             this.CancelarBtn.TabIndex = 17;
@@ -153,7 +155,7 @@
             // 
             // EmailTxt
             // 
-            this.EmailTxt.Location = new System.Drawing.Point(102, 219);
+            this.EmailTxt.Location = new System.Drawing.Point(102, 250);
             this.EmailTxt.Name = "EmailTxt";
             this.EmailTxt.Size = new System.Drawing.Size(143, 20);
             this.EmailTxt.TabIndex = 9;
@@ -161,7 +163,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(33, 219);
+            this.label6.Location = new System.Drawing.Point(33, 250);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 18;
@@ -169,7 +171,7 @@
             // 
             // CelularTxt
             // 
-            this.CelularTxt.Location = new System.Drawing.Point(102, 256);
+            this.CelularTxt.Location = new System.Drawing.Point(102, 287);
             this.CelularTxt.Name = "CelularTxt";
             this.CelularTxt.Size = new System.Drawing.Size(143, 20);
             this.CelularTxt.TabIndex = 10;
@@ -177,7 +179,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(33, 256);
+            this.label7.Location = new System.Drawing.Point(33, 287);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 20;
@@ -185,7 +187,7 @@
             // 
             // FijoTxt
             // 
-            this.FijoTxt.Location = new System.Drawing.Point(102, 290);
+            this.FijoTxt.Location = new System.Drawing.Point(102, 321);
             this.FijoTxt.Name = "FijoTxt";
             this.FijoTxt.Size = new System.Drawing.Size(143, 20);
             this.FijoTxt.TabIndex = 11;
@@ -193,17 +195,35 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(33, 290);
+            this.label8.Location = new System.Drawing.Point(33, 321);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(26, 13);
             this.label8.TabIndex = 22;
             this.label8.Text = "Fijo:";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(33, 216);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Fax:";
+            // 
+            // FaxTxt
+            // 
+            this.FaxTxt.Location = new System.Drawing.Point(102, 216);
+            this.FaxTxt.Name = "FaxTxt";
+            this.FaxTxt.Size = new System.Drawing.Size(141, 20);
+            this.FaxTxt.TabIndex = 24;
+            // 
             // ClienteAMFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 390);
+            this.ClientSize = new System.Drawing.Size(348, 407);
+            this.Controls.Add(this.FaxTxt);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.FijoTxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.CelularTxt);
@@ -253,5 +273,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox FijoTxt;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox FaxTxt;
     }
 }

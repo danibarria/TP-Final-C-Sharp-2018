@@ -100,6 +100,42 @@
     <Compile Include="Formularios\PrincipalFrm.Designer.cs">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ProductoAMFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProductoAMFrm.Designer.cs">
+      <DependentUpon>ProductoAMFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProductoBusqFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProductoBusqFrm.Designer.cs">
+      <DependentUpon>ProductoBusqFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProductoResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProductoResultsFrm.Designer.cs">
+      <DependentUpon>ProductoResultsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProveedorAMFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProveedorAMFrm.Designer.cs">
+      <DependentUpon>ProveedorAMFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProveedorBusqFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProveedorBusqFrm.Designer.cs">
+      <DependentUpon>ProveedorBusqFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ProveedorResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ProveedorResultsFrm.Designer.cs">
+      <DependentUpon>ProveedorResultsFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\IFormGridReload.cs" />
@@ -117,6 +153,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PrincipalFrm.resx">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProductoAMFrm.resx">
+      <DependentUpon>ProductoAMFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProductoBusqFrm.resx">
+      <DependentUpon>ProductoBusqFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProductoResultsFrm.resx">
+      <DependentUpon>ProductoResultsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProveedorAMFrm.resx">
+      <DependentUpon>ProveedorAMFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProveedorBusqFrm.resx">
+      <DependentUpon>ProveedorBusqFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ProveedorResultsFrm.resx">
+      <DependentUpon>ProveedorResultsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

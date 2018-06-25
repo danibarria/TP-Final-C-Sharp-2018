@@ -21,3 +21,32 @@ C:\temp\c#\winNegocios\WinNegocio\bin\Release\ja\Npgsql.resources.dll
 C:\temp\c#\winNegocios\WinNegocio\bin\Release\zh-CN\Npgsql.resources.dll
 C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.exe
 C:\temp\c#\winNegocios\WinNegocio\obj\x86\Release\WinNegocio.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\WinNegocio.exe.config
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\WinNegocio.exe
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\WinNegocio.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\Npgsql.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\Mono.Security.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\Npgsql.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\Npgsql.xml
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\de\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\es\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\fi\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\fr\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\ja\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Release\zh-CN\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.csprojResolveAssemblyReference.cache
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.FormTestModel.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClienteBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClienteAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ClientesResultsFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.PrincipalFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProveedorAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Properties.Resources.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.csproj.GenerateResource.Cache
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.exe
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProveedorResultsFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProveedorBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProductoAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProductoBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProductoResultsFrm.resources

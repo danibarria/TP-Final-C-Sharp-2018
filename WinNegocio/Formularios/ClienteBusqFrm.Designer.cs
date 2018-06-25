@@ -30,12 +30,12 @@
         {
             this.BuscarBtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.NombreCiaTxt = new System.Windows.Forms.TextBox();
+            this.NombreCiaChk = new System.Windows.Forms.CheckBox();
             this.ListTodoChk = new System.Windows.Forms.CheckBox();
             this.CeulaRucTxt = new System.Windows.Forms.TextBox();
             this.CedulaRucChk = new System.Windows.Forms.CheckBox();
             this.CancelarBtn = new System.Windows.Forms.Button();
-            this.NombreCiaTxt = new System.Windows.Forms.TextBox();
-            this.NombreCiaChk = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,26 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criterios";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // NombreCiaTxt
+            // 
+            this.NombreCiaTxt.Enabled = false;
+            this.NombreCiaTxt.Location = new System.Drawing.Point(115, 60);
+            this.NombreCiaTxt.Name = "NombreCiaTxt";
+            this.NombreCiaTxt.Size = new System.Drawing.Size(189, 20);
+            this.NombreCiaTxt.TabIndex = 6;
+            // 
+            // NombreCiaChk
+            // 
+            this.NombreCiaChk.AutoSize = true;
+            this.NombreCiaChk.Location = new System.Drawing.Point(26, 60);
+            this.NombreCiaChk.Name = "NombreCiaChk";
+            this.NombreCiaChk.Size = new System.Drawing.Size(83, 17);
+            this.NombreCiaChk.TabIndex = 5;
+            this.NombreCiaChk.Text = "Nombre cia:";
+            this.NombreCiaChk.UseVisualStyleBackColor = true;
+            this.NombreCiaChk.CheckedChanged += new System.EventHandler(this.NombreCiaChk_CheckedChanged);
             // 
             // ListTodoChk
             // 
@@ -103,25 +123,6 @@
             this.CancelarBtn.UseVisualStyleBackColor = true;
             this.CancelarBtn.Click += new System.EventHandler(this.CancelarBtn_Click);
             // 
-            // NombreCiaTxt
-            // 
-            this.NombreCiaTxt.Enabled = false;
-            this.NombreCiaTxt.Location = new System.Drawing.Point(115, 60);
-            this.NombreCiaTxt.Name = "NombreCiaTxt";
-            this.NombreCiaTxt.Size = new System.Drawing.Size(189, 20);
-            this.NombreCiaTxt.TabIndex = 6;
-            // 
-            // NombreCiaChk
-            // 
-            this.NombreCiaChk.AutoSize = true;
-            this.NombreCiaChk.Location = new System.Drawing.Point(26, 60);
-            this.NombreCiaChk.Name = "NombreCiaChk";
-            this.NombreCiaChk.Size = new System.Drawing.Size(83, 17);
-            this.NombreCiaChk.TabIndex = 5;
-            this.NombreCiaChk.Text = "Nombre cia:";
-            this.NombreCiaChk.UseVisualStyleBackColor = true;
-            this.NombreCiaChk.CheckedChanged += new System.EventHandler(this.NombreCiaChk_CheckedChanged);
-            // 
             // ClienteBusqFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,6 +136,7 @@
             this.Name = "ClienteBusqFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda de cliente";
+            this.Load += new System.EventHandler(this.ClienteBusqFrm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

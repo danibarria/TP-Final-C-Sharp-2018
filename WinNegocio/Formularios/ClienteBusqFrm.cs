@@ -11,12 +11,17 @@ namespace WinNegocio.Formularios
 {
     public partial class ClienteBusqFrm : Form
     {
+        OperacionForm operacion = OperacionForm.frmModificacion;
+
         public ClienteBusqFrm()
         {
             InitializeComponent();
         }
 
-     
+        public void NewListado()
+        {
+            this.operacion = OperacionForm.frmConsulta;
+        }
 
         private void CedulaRucChk_CheckedChanged(object sender, EventArgs e)
         {
@@ -31,7 +36,6 @@ namespace WinNegocio.Formularios
         private void BuscarBtn_Click(object sender, EventArgs e)
         {
             ClientesResultsFrm pfrm;
-            
             string cedula_ruc = null;
             string nombre_cia = null;
             if(!ListTodoChk.Checked && !this.CedulaRucChk.Checked && !this.NombreCiaChk.Checked )
@@ -42,10 +46,15 @@ namespace WinNegocio.Formularios
 
             
             
-            //if (!ListTodoChk.Checked && this.CedulaRucChk.Checked)
-                //cedula_ruc = this.CeulaRucTxt.Text;
-            nombre_cia = NombreCiaTxt.Text;
+            if (this.CedulaRucChk.Checked)
+                cedula_ruc = this.CeulaRucTxt.Text;
+            if(this.NombreCiaChk.Checked)
+                nombre_cia = this.NombreCiaTxt.Text;
             pfrm = new ClientesResultsFrm();
+            if (this.operacion == OperacionForm.frmConsulta)
+            {
+                pfrm.NewListado();
+            }
             Cursor.Current = Cursors.WaitCursor;
             this.Visible = false;
             pfrm.ResultadosCliente(cedula_ruc, nombre_cia);
@@ -57,7 +66,7 @@ namespace WinNegocio.Formularios
             if (this.ListTodoChk.Checked)
             {
                 this.CedulaRucChk.Checked = false;
-                
+                this.NombreCiaChk.Checked = false;
             }
         }
 
@@ -74,6 +83,16 @@ namespace WinNegocio.Formularios
                 this.ListTodoChk.Checked = false;
                 this.NombreCiaTxt.Focus();
             }
+        }
+
+        private void ClienteBusqFrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

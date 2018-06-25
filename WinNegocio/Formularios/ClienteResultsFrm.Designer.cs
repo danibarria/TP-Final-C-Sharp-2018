@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.gridClientes = new System.Windows.Forms.DataGridView();
-            this.CerrarBtn = new System.Windows.Forms.Button();
             this.CedulaRuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Columna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CerrarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,11 +45,33 @@
             this.Columna});
             this.gridClientes.Location = new System.Drawing.Point(2, 12);
             this.gridClientes.Name = "gridClientes";
+            this.gridClientes.ReadOnly = true;
             this.gridClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridClientes.Size = new System.Drawing.Size(625, 316);
             this.gridClientes.TabIndex = 0;
+            this.gridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellContentClick_1);
             this.gridClientes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellDoubleClick);
             this.gridClientes.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridClientes_DataBindingComplete_1);
+            // 
+            // CedulaRuc
+            // 
+            this.CedulaRuc.DataPropertyName = "CedulaRuc";
+            this.CedulaRuc.HeaderText = "Cedula";
+            this.CedulaRuc.Name = "CedulaRuc";
+            this.CedulaRuc.ReadOnly = true;
+            // 
+            // NombreCia
+            // 
+            this.NombreCia.DataPropertyName = "NombreCia";
+            this.NombreCia.HeaderText = "Nombre Cia";
+            this.NombreCia.Name = "NombreCia";
+            this.NombreCia.ReadOnly = true;
+            // 
+            // Columna
+            // 
+            this.Columna.HeaderText = "Columna";
+            this.Columna.Name = "Columna";
+            this.Columna.ReadOnly = true;
             // 
             // CerrarBtn
             // 
@@ -60,23 +82,6 @@
             this.CerrarBtn.Text = "Cerrar";
             this.CerrarBtn.UseVisualStyleBackColor = true;
             this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
-            // 
-            // CedulaRuc
-            // 
-            this.CedulaRuc.DataPropertyName = "CedulaRuc";
-            this.CedulaRuc.HeaderText = "Cedula";
-            this.CedulaRuc.Name = "CedulaRuc";
-            // 
-            // NombreCia
-            // 
-            this.NombreCia.DataPropertyName = "NombreCia";
-            this.NombreCia.HeaderText = "Nombre Cia";
-            this.NombreCia.Name = "NombreCia";
-            // 
-            // Columna
-            // 
-            this.Columna.HeaderText = "Columna";
-            this.Columna.Name = "Columna";
             // 
             // ClientesResultsFrm
             // 

@@ -22,3 +22,32 @@ C:\temp\c#\winNegocios\WinNegocio\obj\x86\Debug\WinNegocio.csproj.GenerateResour
 C:\temp\c#\winNegocios\WinNegocio\obj\x86\Debug\WinNegocio.exe
 C:\temp\c#\winNegocios\WinNegocio\obj\x86\Debug\WinNegocio.pdb
 C:\temp\c#\winNegocios\WinNegocio\obj\x86\Debug\WinNegocio.csprojResolveAssemblyReference.cache
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\WinNegocio.exe.config
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.exe
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\WinNegocio.exe
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\WinNegocio.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\Npgsql.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\Mono.Security.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\Npgsql.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\Npgsql.xml
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\de\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\es\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\fi\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\fr\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\ja\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.csprojResolveAssemblyReference.cache
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.FormTestModel.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ClienteBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ClienteAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ClientesResultsFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.PrincipalFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ProveedorAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Properties.Resources.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.csproj.GenerateResource.Cache
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ProveedorResultsFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ProveedorBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ProductoAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ProductoBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.ProductoResultsFrm.resources

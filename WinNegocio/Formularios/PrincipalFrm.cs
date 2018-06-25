@@ -67,5 +67,50 @@ namespace WinNegocio.Formularios
             FormTestModel frm = new  FormTestModel();
             frm.Show();
         }
+
+        private void altaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProveedorAMFrm frmProveedorAlta = new ProveedorAMFrm();
+            frmProveedorAlta.NewProveedor(null);
+        }
+
+        private void listadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProveedorBusqFrm pbusq = new ProveedorBusqFrm();
+            pbusq.NewListado();
+            pbusq.Show();
+        }
+
+        private void modificacionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProveedorBusqFrm pbusq = new ProveedorBusqFrm();
+            pbusq.Show();
+        }
+
+        private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClienteBusqFrm pbusq = new ClienteBusqFrm();
+            pbusq.NewListado();
+            pbusq.Show();
+        }
+
+        private void altaToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ProductoAMFrm frmProveedorAlta = new ProductoAMFrm();
+            frmProveedorAlta.NewProducto(null);
+        }
+
+        private void modificacionToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ProductoBusqFrm pbusq = new ProductoBusqFrm();
+            pbusq.Show();
+        }
+
+        private void listadoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ProductoBusqFrm pbusq = new ProductoBusqFrm();
+            pbusq.NewListado();
+            pbusq.Show();
+        }
     }
 }
