@@ -64,7 +64,7 @@ namespace LibNegocio.db
                                 (this.IsNew?"":_columns[1] + "=")+this._proveedor_id.ToString(),
                                 (this.IsNew?"":_columns[2] + "=")+this._categoria_id.ToString(),
                                 (this.IsNew?"":_columns[3] + "=")+String.Format("'{0}'",this._descripcion),
-                                (this.IsNew?"":_columns[4] + "=")+this._precio_unit.ToString(),
+                                (this.IsNew?"":_columns[4] + "=")+this._precio_unit.ToString().Replace(',','.'),
                                 (this.IsNew?"":_columns[5] + "=")+this._existencia.ToString(),
                               };
             return values;

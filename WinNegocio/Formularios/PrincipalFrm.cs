@@ -112,5 +112,24 @@ namespace WinNegocio.Formularios
             pbusq.NewListado();
             pbusq.Show();
         }
+
+        private void altaToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            EmpleadoAMFrm frmProveedorAlta = new EmpleadoAMFrm();
+            frmProveedorAlta.NewEmpleado(null);
+        }
+
+        private void modificacionToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            EmpleadoBusqFrm pbusq = new EmpleadoBusqFrm();
+            pbusq.Show();
+        }
+
+        private void listadoToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            EmpleadoBusqFrm pbusq = new EmpleadoBusqFrm();
+            pbusq.NewListado();
+            pbusq.Show();
+        }
     }
 }

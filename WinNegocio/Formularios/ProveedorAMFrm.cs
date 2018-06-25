@@ -79,5 +79,7 @@ namespace WinNegocio.Formularios
             this.Dispose();
         }
 
+  
+
     }
 }
