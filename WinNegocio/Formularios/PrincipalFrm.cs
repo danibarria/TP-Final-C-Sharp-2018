@@ -142,7 +142,15 @@ namespace WinNegocio.Formularios
         private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             CategoriaBusqFrm frm = new CategoriaBusqFrm();
+            frm.newListado();
             frm.ShowDialog();
+        }
+
+        private void modificacionToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //no hacer 
+            CategoriaBusqFrm frm = new CategoriaBusqFrm();
+            frm.Show();
         }
     }
 }

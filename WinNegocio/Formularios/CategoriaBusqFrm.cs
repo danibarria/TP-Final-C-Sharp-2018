@@ -12,34 +12,49 @@ namespace WinNegocio.Formularios
     public partial class CategoriaBusqFrm : Form
     {
         OperacionForm operacion = OperacionForm.frmModificacion;
-
         public CategoriaBusqFrm()
         {
             InitializeComponent();
         }
-
         public void newListado() {
             this.operacion = OperacionForm.frmConsulta;
         }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //boton buscar
         {
-            if (this.listaTodo.Checked)
+           CategoriaResultsFrm frm = new CategoriaResultsFrm();
+            if (!nombreCheck.Checked && !listarCheck.Checked)
             {
-                //consulta
-                //resultado = new CategoriaResultsFrm();
-            }
-            else {
                 MessageBox.Show("Tiene que ingresar criterio de busqueda", "Faltan criterios...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+            if (this.operacion == OperacionForm.frmConsulta) {
+                frm.NewListado();
+            }
+            if(nombreCheck.Checked)
+            {
+                //hacer filtrado
+                frm.ResultadosCategoria(this.NombreTxt.Text);
+            }
+            if (listarCheck.Checked)
+            {
+                //buscar indistintamente
+                frm.ResultadosCategoria();
+            }
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void listarCheck_CheckedChanged(object sender, EventArgs e)
         {
-            CategoriaResultsFrm frm = new CategoriaResultsFrm();
-            frm.NewListado();
-            frm.ResultadosCategoria();
+            if (this.listarCheck.Checked) {
+                this.nombreCheck.Checked = false;
+            }
+        }
+        private void nombreCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            this.NombreTxt.Enabled = this.nombreCheck.Checked;
+            if (this.nombreCheck.Checked)
+            {
+                this.listarCheck.Checked = false;
+                this.NombreTxt.Focus();
+            }
         }
     }
 }

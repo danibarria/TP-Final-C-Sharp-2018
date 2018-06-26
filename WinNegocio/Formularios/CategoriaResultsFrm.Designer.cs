@@ -41,10 +41,13 @@
             this.NombreCategoria});
             this.gridCategoria.Location = new System.Drawing.Point(46, 40);
             this.gridCategoria.Name = "gridCategoria";
+            this.gridCategoria.ReadOnly = true;
             this.gridCategoria.RowTemplate.Height = 24;
-            this.gridCategoria.Size = new System.Drawing.Size(389, 438);
+            this.gridCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridCategoria.Size = new System.Drawing.Size(397, 377);
             this.gridCategoria.TabIndex = 0;
             this.gridCategoria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.gridCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCategoria_CellDoubleClick);
             // 
             // NombreCategoria
             // 
@@ -59,7 +62,7 @@
             this.ClientSize = new System.Drawing.Size(490, 490);
             this.Controls.Add(this.gridCategoria);
             this.Name = "CategoriaResultsFrm";
-            this.Text = "Form1";
+            this.Text = "Resulta2";
             ((System.ComponentModel.ISupportInitialize)(this.gridCategoria)).EndInit();
             this.ResumeLayout(false);
 
