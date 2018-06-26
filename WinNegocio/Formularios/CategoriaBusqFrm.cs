@@ -34,5 +34,12 @@ namespace WinNegocio.Formularios
                 return;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CategoriaResultsFrm frm = new CategoriaResultsFrm();
+            frm.NewListado();
+            frm.ResultadosCategoria();
+        }
     }
 }
