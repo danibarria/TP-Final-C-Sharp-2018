@@ -161,6 +161,7 @@
             this.modificacionToolStripMenuItem2.Name = "modificacionToolStripMenuItem2";
             this.modificacionToolStripMenuItem2.Size = new System.Drawing.Size(165, 24);
             this.modificacionToolStripMenuItem2.Text = "Modificacion";
+            this.modificacionToolStripMenuItem2.Click += new System.EventHandler(this.modificacionToolStripMenuItem2_Click);
             // 
             // listadoToolStripMenuItem2
             // 

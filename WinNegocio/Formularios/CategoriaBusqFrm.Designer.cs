@@ -28,41 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listaTodo = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.listarCheck = new System.Windows.Forms.CheckBox();
+            this.BuscarBtn = new System.Windows.Forms.Button();
+            this.nombreCheck = new System.Windows.Forms.CheckBox();
+            this.NombreTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // listaTodo
+            // listarCheck
             // 
-            this.listaTodo.AutoSize = true;
-            this.listaTodo.Location = new System.Drawing.Point(45, 103);
-            this.listaTodo.Name = "listaTodo";
-            this.listaTodo.Size = new System.Drawing.Size(97, 21);
-            this.listaTodo.TabIndex = 0;
-            this.listaTodo.Text = "Listar todo";
-            this.listaTodo.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.listaTodo.UseVisualStyleBackColor = true;
-            this.listaTodo.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.listarCheck.AutoSize = true;
+            this.listarCheck.Location = new System.Drawing.Point(45, 103);
+            this.listarCheck.Name = "listarCheck";
+            this.listarCheck.Size = new System.Drawing.Size(97, 21);
+            this.listarCheck.TabIndex = 0;
+            this.listarCheck.Text = "Listar todo";
+            this.listarCheck.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.listarCheck.UseVisualStyleBackColor = true;
+            this.listarCheck.CheckedChanged += new System.EventHandler(this.listarCheck_CheckedChanged);
             // 
-            // button1
+            // BuscarBtn
             // 
-            this.button1.Location = new System.Drawing.Point(160, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BuscarBtn.Location = new System.Drawing.Point(160, 149);
+            this.BuscarBtn.Name = "BuscarBtn";
+            this.BuscarBtn.Size = new System.Drawing.Size(90, 29);
+            this.BuscarBtn.TabIndex = 1;
+            this.BuscarBtn.Text = "Buscar";
+            this.BuscarBtn.UseVisualStyleBackColor = true;
+            this.BuscarBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // nombreCheck
+            // 
+            this.nombreCheck.AutoSize = true;
+            this.nombreCheck.Location = new System.Drawing.Point(45, 54);
+            this.nombreCheck.Name = "nombreCheck";
+            this.nombreCheck.Size = new System.Drawing.Size(80, 21);
+            this.nombreCheck.TabIndex = 2;
+            this.nombreCheck.Text = "Nombre";
+            this.nombreCheck.UseVisualStyleBackColor = true;
+            this.nombreCheck.CheckedChanged += new System.EventHandler(this.nombreCheck_CheckedChanged);
+            // 
+            // NombreTxt
+            // 
+            this.NombreTxt.Enabled = false;
+            this.NombreTxt.Location = new System.Drawing.Point(160, 54);
+            this.NombreTxt.Name = "NombreTxt";
+            this.NombreTxt.Size = new System.Drawing.Size(235, 22);
+            this.NombreTxt.TabIndex = 3;
             // 
             // CategoriaBusqFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 224);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listaTodo);
+            this.Controls.Add(this.NombreTxt);
+            this.Controls.Add(this.nombreCheck);
+            this.Controls.Add(this.BuscarBtn);
+            this.Controls.Add(this.listarCheck);
             this.Name = "CategoriaBusqFrm";
-            this.Text = "Form1";
+            this.Text = "Categoria";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,7 +93,9 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox listaTodo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox listarCheck;
+        private System.Windows.Forms.Button BuscarBtn;
+        private System.Windows.Forms.CheckBox nombreCheck;
+        private System.Windows.Forms.TextBox NombreTxt;
     }
 }
