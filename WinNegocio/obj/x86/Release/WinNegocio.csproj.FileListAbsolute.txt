@@ -56,7 +56,6 @@ C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\o
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\WinNegocio.exe.config
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.exe
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.pdb
-C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.csprojResolveAssemblyReference.cache
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.EmpleadoAMFrm.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.EmpleadoBusqFrm.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.EmpleadoResultsFrm.resources
@@ -73,3 +72,19 @@ C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.F
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.ProveedorResultsFrm.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Properties.Resources.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.csproj.GenerateResource.Cache
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\WinNegocio.exe
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\WinNegocio.pdb
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\Npgsql.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\Mono.Security.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\Npgsql.pdb
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\Npgsql.xml
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\de\Npgsql.resources.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\es\Npgsql.resources.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\fi\Npgsql.resources.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\fr\Npgsql.resources.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\ja\Npgsql.resources.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Release\zh-CN\Npgsql.resources.dll
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaAltaFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaBusqFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaMCFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaResultsFrm.resources
