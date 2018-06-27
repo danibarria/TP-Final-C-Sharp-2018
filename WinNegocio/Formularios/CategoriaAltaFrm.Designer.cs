@@ -1,6 +1,6 @@
 ﻿namespace WinNegocio.Formularios
 {
-    partial class CategoriaAMFrm
+    partial class CategoriaAltaFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,7 @@
             this.Guardar.UseVisualStyleBackColor = true;
             this.Guardar.Click += new System.EventHandler(this.Guardar_Click_1);
             // 
-            // CategoriaAltaFrm
+            // CategoriaAMFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -68,10 +68,7 @@
             this.Controls.Add(this.Guardar);
             this.Controls.Add(this.AltaCategoria);
             this.Controls.Add(this.agregarCategoria);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "CategoriaAltaFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "CategoriaAMFrm";
             this.Text = "Alta Categoria";
             this.ResumeLayout(false);
             this.PerformLayout();

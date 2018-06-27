@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.gridOrden = new System.Windows.Forms.DataGridView();
+            this.CerrarBtn = new System.Windows.Forms.Button();
             this.Orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaOrden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CerrarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridOrden)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,15 +47,24 @@
             this.Cliente,
             this.FechaOrden,
             this.Descuento});
-            this.gridOrden.Location = new System.Drawing.Point(16, 15);
-            this.gridOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridOrden.Location = new System.Drawing.Point(12, 12);
             this.gridOrden.Name = "gridOrden";
             this.gridOrden.ReadOnly = true;
             this.gridOrden.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridOrden.Size = new System.Drawing.Size(731, 389);
+            this.gridOrden.Size = new System.Drawing.Size(548, 316);
             this.gridOrden.TabIndex = 0;
             this.gridOrden.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridOrden_CellDoubleClick);
             this.gridOrden.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridOrden_DataBindingComplete);
+            // 
+            // CerrarBtn
+            // 
+            this.CerrarBtn.Location = new System.Drawing.Point(476, 367);
+            this.CerrarBtn.Name = "CerrarBtn";
+            this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
+            this.CerrarBtn.TabIndex = 15;
+            this.CerrarBtn.Text = "Cerrar";
+            this.CerrarBtn.UseVisualStyleBackColor = true;
+            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
             // 
             // Orden
             // 
@@ -90,29 +99,14 @@
             this.Descuento.Name = "Descuento";
             this.Descuento.ReadOnly = true;
             // 
-            // CerrarBtn
-            // 
-            this.CerrarBtn.Location = new System.Drawing.Point(635, 452);
-            this.CerrarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(112, 33);
-            this.CerrarBtn.TabIndex = 15;
-            this.CerrarBtn.Text = "Cerrar";
-            this.CerrarBtn.UseVisualStyleBackColor = true;
-            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
-            // 
             // OrdenResultsFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 500);
+            this.ClientSize = new System.Drawing.Size(579, 406);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.gridOrden);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "OrdenResultsFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrdenResultsFrm";
             ((System.ComponentModel.ISupportInitialize)(this.gridOrden)).EndInit();
             this.ResumeLayout(false);

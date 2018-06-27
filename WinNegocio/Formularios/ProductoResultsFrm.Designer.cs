@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.gridProducto = new System.Windows.Forms.DataGridView();
+            this.CerrarBtn = new System.Windows.Forms.Button();
             this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Exisxtencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CerrarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,15 +47,24 @@
             this.Descripcion,
             this.PrecioUnitario,
             this.Exisxtencia});
-            this.gridProducto.Location = new System.Drawing.Point(16, 15);
-            this.gridProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridProducto.Location = new System.Drawing.Point(12, 12);
             this.gridProducto.Name = "gridProducto";
             this.gridProducto.ReadOnly = true;
             this.gridProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProducto.Size = new System.Drawing.Size(833, 389);
+            this.gridProducto.Size = new System.Drawing.Size(625, 316);
             this.gridProducto.TabIndex = 0;
             this.gridProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProducto_CellDoubleClick);
             this.gridProducto.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridProducto_DataBindingComplete);
+            // 
+            // CerrarBtn
+            // 
+            this.CerrarBtn.Location = new System.Drawing.Point(498, 367);
+            this.CerrarBtn.Name = "CerrarBtn";
+            this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
+            this.CerrarBtn.TabIndex = 16;
+            this.CerrarBtn.Text = "Cerrar";
+            this.CerrarBtn.UseVisualStyleBackColor = true;
+            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
             // 
             // Proveedor
             // 
@@ -90,29 +99,14 @@
             this.Exisxtencia.Name = "Exisxtencia";
             this.Exisxtencia.ReadOnly = true;
             // 
-            // CerrarBtn
-            // 
-            this.CerrarBtn.Location = new System.Drawing.Point(664, 452);
-            this.CerrarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(112, 33);
-            this.CerrarBtn.TabIndex = 16;
-            this.CerrarBtn.Text = "Cerrar";
-            this.CerrarBtn.UseVisualStyleBackColor = true;
-            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
-            // 
             // ProductoResultsFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 500);
+            this.ClientSize = new System.Drawing.Size(639, 406);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.gridProducto);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "ProductoResultsFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductoResultsFrm";
             ((System.ComponentModel.ISupportInitialize)(this.gridProducto)).EndInit();
             this.ResumeLayout(false);

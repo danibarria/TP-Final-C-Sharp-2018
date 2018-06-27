@@ -45,12 +45,11 @@
             this.Renglon,
             this.Producto,
             this.Cantidad});
-            this.gridDetalleOrden.Location = new System.Drawing.Point(16, 15);
-            this.gridDetalleOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridDetalleOrden.Location = new System.Drawing.Point(12, 12);
             this.gridDetalleOrden.Name = "gridDetalleOrden";
             this.gridDetalleOrden.ReadOnly = true;
             this.gridDetalleOrden.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridDetalleOrden.Size = new System.Drawing.Size(731, 389);
+            this.gridDetalleOrden.Size = new System.Drawing.Size(548, 316);
             this.gridDetalleOrden.TabIndex = 0;
             this.gridDetalleOrden.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDetalleOrden_CellDoubleClick);
             this.gridDetalleOrden.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridOrden_DataBindingComplete);
@@ -77,10 +76,9 @@
             // 
             // CerrarBtn
             // 
-            this.CerrarBtn.Location = new System.Drawing.Point(635, 452);
-            this.CerrarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CerrarBtn.Location = new System.Drawing.Point(476, 367);
             this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(112, 33);
+            this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
             this.CerrarBtn.TabIndex = 16;
             this.CerrarBtn.Text = "Cerrar";
             this.CerrarBtn.UseVisualStyleBackColor = true;
@@ -88,10 +86,9 @@
             // 
             // ModOrdenBtn
             // 
-            this.ModOrdenBtn.Location = new System.Drawing.Point(469, 452);
-            this.ModOrdenBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ModOrdenBtn.Location = new System.Drawing.Point(352, 367);
             this.ModOrdenBtn.Name = "ModOrdenBtn";
-            this.ModOrdenBtn.Size = new System.Drawing.Size(136, 33);
+            this.ModOrdenBtn.Size = new System.Drawing.Size(102, 27);
             this.ModOrdenBtn.TabIndex = 17;
             this.ModOrdenBtn.Text = "ModificarOrden";
             this.ModOrdenBtn.UseVisualStyleBackColor = true;
@@ -99,10 +96,9 @@
             // 
             // AltaDetalleOrdenBtn
             // 
-            this.AltaDetalleOrdenBtn.Location = new System.Drawing.Point(299, 452);
-            this.AltaDetalleOrdenBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltaDetalleOrdenBtn.Location = new System.Drawing.Point(224, 367);
             this.AltaDetalleOrdenBtn.Name = "AltaDetalleOrdenBtn";
-            this.AltaDetalleOrdenBtn.Size = new System.Drawing.Size(148, 33);
+            this.AltaDetalleOrdenBtn.Size = new System.Drawing.Size(111, 27);
             this.AltaDetalleOrdenBtn.TabIndex = 18;
             this.AltaDetalleOrdenBtn.Text = "AltaDetalleOrden";
             this.AltaDetalleOrdenBtn.UseVisualStyleBackColor = true;
@@ -110,18 +106,14 @@
             // 
             // OrdenDetalleResultsFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 500);
+            this.ClientSize = new System.Drawing.Size(579, 406);
             this.Controls.Add(this.AltaDetalleOrdenBtn);
             this.Controls.Add(this.ModOrdenBtn);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.gridDetalleOrden);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "OrdenDetalleResultsFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrdenDetalleResultsFrm";
             ((System.ComponentModel.ISupportInitialize)(this.gridDetalleOrden)).EndInit();
             this.ResumeLayout(false);

@@ -10,12 +10,12 @@ using LibNegocio.db;
 
 namespace WinNegocio.Formularios
 {
-    public partial class CategoriaAMFrm : Form
+    public partial class CategoriaAltaFrm : Form
     {
         IFormGridReload _frmGrid;
         OperacionForm operacion = OperacionForm.frmAlta;
         Categoria nuevaCategoria;
-        public CategoriaAMFrm()
+        public CategoriaAltaFrm()
         {
             InitializeComponent();
         }
