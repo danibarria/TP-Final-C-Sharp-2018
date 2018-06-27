@@ -11,7 +11,8 @@ namespace LibNegocio.db
         #region variables locales
         private int _orden_id;
         private int _detalle_id;
-		private int _producto_id;		
+		private int _producto_id;
+        private Producto _producto=null;
 		private int _cantidad;        
         #endregion
 
@@ -41,7 +42,33 @@ namespace LibNegocio.db
         {
             get { return _cantidad; }
             set { _cantidad = value; }
-        }				
+        }
+
+        public Producto ProductoObj
+        {
+            get
+            {
+                if (this._producto_id != 0 && this._producto == null)
+                {
+                    _producto = new Producto();
+                    _producto.findbykey(_producto_id);
+                }
+                return _producto;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    _producto_id = 0;
+                }
+                else
+                {
+                    if (value.ProductoId != _producto_id)
+                        _producto_id = value.ProductoId;
+                }
+                _producto = value;
+            }
+        }
 
         #endregion
 

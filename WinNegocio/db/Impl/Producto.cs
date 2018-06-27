@@ -47,7 +47,9 @@ namespace LibNegocio.db
         {
             this._producto_id = Int32.Parse(dr[_columns[0]].ToString());
             this._proveedor_id = Int32.Parse(dr[_columns[1]].ToString());
+            this._proveedor = this.ProveedorObj;
             this._categoria_id = Int32.Parse(dr[_columns[2]].ToString());
+            this._categoria = this.CategoriaObj;
             this._descripcion = dr[_columns[3]].ToString().Trim();
             this._precio_unit = Convert.ToDouble(dr[_columns[4]].ToString());
             this._existencia= Int32.Parse(dr[_columns[5]].ToString());            
@@ -79,6 +81,7 @@ namespace LibNegocio.db
                 return String.Format(sqliu, this.TableName, (this.IsNew ? String.Join(",", _columns) : vvalues), (this.IsNew ? vvalues : String.Format("producto_id = {0}", this.ProductoId)));
             }
         }
+
         // propiedad seteada por implementar IAutoIncrement
         public void setKeyValue(object valueId)
         {

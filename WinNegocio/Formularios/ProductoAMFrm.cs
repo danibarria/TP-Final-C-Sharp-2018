@@ -51,7 +51,6 @@ namespace WinNegocio.Formularios
 
         private void AceptarBtn_Click(object sender, EventArgs e)
         {
-            string aux;
             try
             {
                 if (this.operacion == OperacionForm.frmAlta)

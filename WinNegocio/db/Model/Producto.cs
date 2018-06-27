@@ -15,7 +15,7 @@ namespace LibNegocio.db
         private int _existencia;
 
         private Categoria _categoria=null;
-        
+
         private string _descripcion;
 		#endregion
         
@@ -63,7 +63,7 @@ namespace LibNegocio.db
             get { return _existencia; }
             set { _existencia = value; }
         }
-
+       
         // Objeto Relacion con Categoria
         public Categoria CategoriaObj
         {
@@ -91,8 +91,8 @@ namespace LibNegocio.db
             }
         }
 
-        private Proveedor _proveedor;
-
+        private Proveedor _proveedor=null;
+        
         public Proveedor ProveedorObj
         {
             get {

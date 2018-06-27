@@ -13,6 +13,7 @@ namespace WinNegocio.Formularios
     public partial class EmpleadoResultsFrm : Form, IFormGridReload
     {
         OperacionForm operacion = OperacionForm.frmModificacion;
+       
         public EmpleadoResultsFrm()
         {
             InitializeComponent();
@@ -151,13 +152,16 @@ namespace WinNegocio.Formularios
         }
         private void gridEmpleado_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            Empleado p;
-            foreach (DataGridViewRow row in gridEmpleado.Rows)
+            Empleado em;
+            Empleado rem;
+            foreach (var item in this.gridEmpleado.Rows)
             {
-                DataGridViewCell cell;
-                p = (row.DataBoundItem as Empleado);
-                cell = row.Cells[1];
-                cell.Value = String.Format("{0}, {1}, {2}, {3}, {4}, {5}", p.EmpleadoId, p.Nombre, p.Apellido, p.FechaNac, p.ReportaA, p.Extension);
+                em = (item as DataGridViewRow).DataBoundItem as Empleado;
+                if (em.ReportaA != 0)
+                {
+                    rem = em.ReportaEmpleadoObj;
+                    (item as DataGridViewRow).Cells[3].Value = rem.Nombre + " " + rem.Apellido;
+                }
             }
         }
 

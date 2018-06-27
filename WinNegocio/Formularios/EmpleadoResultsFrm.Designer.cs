@@ -54,6 +54,7 @@
             this.gridEmpleado.Size = new System.Drawing.Size(625, 316);
             this.gridEmpleado.TabIndex = 0;
             this.gridEmpleado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridEmpleado_CellDoubleClick);
+            this.gridEmpleado.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridEmpleado_DataBindingComplete);
             // 
             // CerrarBtn
             // 
@@ -88,7 +89,6 @@
             // 
             // ReportaA
             // 
-            this.ReportaA.DataPropertyName = "ReportaA";
             this.ReportaA.HeaderText = "Reporta A";
             this.ReportaA.Name = "ReportaA";
             this.ReportaA.ReadOnly = true;

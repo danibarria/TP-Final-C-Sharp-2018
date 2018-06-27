@@ -35,8 +35,7 @@ namespace WinNegocio.Formularios
 
         public void ResultadosProducto(string proveedor = null,string categoria=null,string descripcion= null)
         {
-            Proveedor prov;
-            Categoria cat;
+
             if (proveedor == null && categoria == null && descripcion == null)
             {
                 this.gridProducto.AutoGenerateColumns = false;
@@ -94,12 +93,15 @@ namespace WinNegocio.Formularios
         private void gridProducto_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             Producto p;
-            foreach (DataGridViewRow row in gridProducto.Rows)
+            Categoria c;
+            Proveedor pv;
+            foreach (var item in this.gridProducto.Rows)
             {
-                DataGridViewCell cell;
-                p = (row.DataBoundItem as Producto);
-                cell = row.Cells[1];
-                cell.Value = String.Format("{0}, {1}, {2}, {3}, {4}", p.ProveedorId, p.CategoriaId, p.Descripcion, p.PrecioUnitario, p.Existencia);
+                p = (item as DataGridViewRow).DataBoundItem as Producto;
+                c = p.CategoriaObj;
+                pv = p.ProveedorObj;
+                (item as DataGridViewRow).Cells[0].Value = pv.NombreProveedor;
+                (item as DataGridViewRow).Cells[1].Value = c.NombreCategoria;
             }
         }
 

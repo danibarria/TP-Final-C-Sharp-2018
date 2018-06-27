@@ -133,12 +133,11 @@ namespace WinNegocio.Formularios
 
         }
 
-        private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
+                private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             CategoriaAltaFrm frm = new CategoriaAltaFrm();
             frm.ShowDialog();
         }
-
         private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             CategoriaBusqFrm frm = new CategoriaBusqFrm();
@@ -152,5 +151,25 @@ namespace WinNegocio.Formularios
             CategoriaBusqFrm frm = new CategoriaBusqFrm();
             frm.Show();
         }
+        private void altaToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            OrdenAMFrm frmOrdenAlta = new OrdenAMFrm();
+            frmOrdenAlta.NewOrden(null);
+        }
+
+        private void modificacionToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            OrdenBusqFrm pbusq = new OrdenBusqFrm();
+            pbusq.Show();
+        }
+
+        private void listadoToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            OrdenBusqFrm pbusq = new OrdenBusqFrm();
+            pbusq.NewListado();
+            pbusq.Show();            
+        }
+
+
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LibNegocio.db
 {
-    public partial class DetalleOrden : CommonObj, IAccessDB<DetalleOrden>, ITable
+    public partial class DetalleOrden : CommonObj, IAccessDB<DetalleOrden>, ITable, IAutoIncrement
     {
         private string[] _columns = { "orden_id", "detalle_id", "producto_id", "cantidad" };
         public List<DetalleOrden> findAll()
@@ -38,7 +38,7 @@ namespace LibNegocio.db
 
         public string KeyTable
         {
-            get { return ""; }
+            get { return "detalle_id"; }
         }
 
         public void initialize(System.Data.DataRow dr)
@@ -71,13 +71,13 @@ namespace LibNegocio.db
             {
                 string vvalues = String.Join(",", this.list_values());
                 string sqliu = (this.IsNew ? "insert into {0} ({1}) values ({2})" : "update  {0} set {1} where {2}");
-                return String.Format(sqliu, this.TableName, (this.IsNew ? String.Join(",", _columns).Replace("orden_id,","") : vvalues), (this.IsNew ? vvalues : String.Format("orden_id = {0}", this.OrdenId)));
+                return String.Format(sqliu, this.TableName, (this.IsNew ? String.Join(",", _columns)/*.Replace("orden_id,","")*/ : vvalues), (this.IsNew ? vvalues : String.Format("orden_id = {0}", this.OrdenId)));
             }
         }
 
         public void setKeyValue(object valueId)
         {
-            throw new NotImplementedException();
+            this._detalle_id = Convert.ToInt32(valueId);
         }
 
         public string sqlKeyWhere(params object[] values)
