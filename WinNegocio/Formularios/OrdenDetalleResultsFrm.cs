@@ -71,7 +71,7 @@ namespace WinNegocio.Formularios
         {
             if(this.operacion == OperacionForm.frmModificacion){
                 DetalleOrdenAMFrm frm = new DetalleOrdenAMFrm();
-                frm.NewDetalleOrden(null,   orden);
+                frm.NewDetalleOrden(null, orden);
             }
         }
 

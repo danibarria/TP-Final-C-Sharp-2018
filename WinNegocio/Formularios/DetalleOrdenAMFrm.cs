@@ -14,7 +14,6 @@ namespace WinNegocio.Formularios
     {
         OperacionForm operacion = OperacionForm.frmConsulta;
         IFormGridReload _frmGrid;
-
         DetalleOrden dOrd;
         private string _det=null;
         private string _ord = null;
@@ -29,6 +28,9 @@ namespace WinNegocio.Formularios
         public DetalleOrdenAMFrm()
         {
             InitializeComponent();
+            this.ProductoCbo.DisplayMember = "Descripcion";
+            this.ProductoCbo.ValueMember = "ProductoId";
+            this.ProductoCbo.DataSource = ManagerDB<Producto>.findAll();
         }
 
         public void ShowDetalleOrden(DetalleOrden detalleOrden, IFormGridReload frmGrid)
@@ -42,6 +44,11 @@ namespace WinNegocio.Formularios
             this.CantidadTxt.Text = dOrd.Cantidad.ToString();
             this.IdMsk.Text = dOrd.DetalleId.ToString();
             
+            //prueba xd
+            // propiedades del control a configurar para que se carguen en el control
+            
+
+
             this.ShowDialog();
         }
 
@@ -50,7 +57,7 @@ namespace WinNegocio.Formularios
             _frmGrid = frmGrid;
             this.Text = "Nuevo DetalleOrden";
             this.operacion = OperacionForm.frmAlta;
-            this.IdMsk.Text = orden;
+            this._ord = orden;
             this.ShowDialog();
         }
         
@@ -63,16 +70,21 @@ namespace WinNegocio.Formularios
         {
             try
             {
-                if (this.operacion == OperacionForm.frmAlta)
+                if (this.operacion == OperacionForm.frmModificacion)
                 {
-                    dOrd = new DetalleOrden();
+                    dOrd.OrdenId = System.Convert.ToInt32(this._ord, 10);
+                    dOrd.DetalleId = System.Convert.ToInt32(this.IdMsk.Text, 10);
+                    dOrd.ProductoId = System.Convert.ToInt32(this.ProductoIdTxt.Text, 10);
+                    dOrd.Cantidad = System.Convert.ToInt32(this.CantidadTxt.Text, 10);
                     //cl.ClienteId = Convert.ToInt32(this.IdMsk.Text);
                 }
-                /* Comprobar que esten los datos obligatorios*/
-                dOrd.OrdenId = System.Convert.ToInt32(this._ord,10);
-                dOrd.DetalleId =System.Convert.ToInt32(this.IdMsk.Text,10);
-                dOrd.ProductoId = System.Convert.ToInt32(this.ProductoIdTxt.Text,10);
-                dOrd.Cantidad = System.Convert.ToInt32(this.CantidadTxt.Text, 10);
+                else {
+                    dOrd = new DetalleOrden();
+                    dOrd.OrdenId = System.Convert.ToInt32(this._ord, 10);
+                    dOrd.ProductoId = System.Convert.ToInt32(this.ProductoIdTxt.Text, 10);
+                    dOrd.Cantidad = System.Convert.ToInt32(this.CantidadTxt.Text, 10);
+                }
+
                 if (!dOrd.saveObj())
                 {
                     MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nuevo DetalleOrde" : "Error al intentar editar informacion de DetalleOrden", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -88,5 +100,15 @@ namespace WinNegocio.Formularios
             //_frmGrid.ReloadGrid();
             this.Dispose();
         }
+
+        private void ProductoCbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Producto p = new Producto();
+            p = (this.ProductoCbo.SelectedItem as Producto);
+            this.ProductoIdTxt.Text = p.ProductoId.ToString();
+            //this.ProductoIdTxt.Text;
+        }
+
+
     }
 }
