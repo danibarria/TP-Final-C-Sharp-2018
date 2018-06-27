@@ -54,6 +54,7 @@
             this.NombreCategoria.DataPropertyName = "NombreCategoria";
             this.NombreCategoria.HeaderText = "Nombre";
             this.NombreCategoria.Name = "NombreCategoria";
+            this.NombreCategoria.ReadOnly = true;
             // 
             // CategoriaResultsFrm
             // 
@@ -61,8 +62,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 490);
             this.Controls.Add(this.gridCategoria);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CategoriaResultsFrm";
-            this.Text = "Resulta2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Listado Categoria";
             ((System.ComponentModel.ISupportInitialize)(this.gridCategoria)).EndInit();
             this.ResumeLayout(false);
 

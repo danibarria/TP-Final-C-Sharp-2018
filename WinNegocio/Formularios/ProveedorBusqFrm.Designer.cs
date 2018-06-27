@@ -42,9 +42,11 @@
             this.groupBox1.Controls.Add(this.NombreTxt);
             this.groupBox1.Controls.Add(this.NombreChk);
             this.groupBox1.Controls.Add(this.ListTodoChk);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(424, 125);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(565, 154);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criterios";
@@ -52,17 +54,19 @@
             // NombreTxt
             // 
             this.NombreTxt.Enabled = false;
-            this.NombreTxt.Location = new System.Drawing.Point(111, 51);
+            this.NombreTxt.Location = new System.Drawing.Point(148, 63);
+            this.NombreTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NombreTxt.Name = "NombreTxt";
-            this.NombreTxt.Size = new System.Drawing.Size(189, 20);
+            this.NombreTxt.Size = new System.Drawing.Size(251, 22);
             this.NombreTxt.TabIndex = 6;
             // 
             // NombreChk
             // 
             this.NombreChk.AutoSize = true;
-            this.NombreChk.Location = new System.Drawing.Point(22, 51);
+            this.NombreChk.Location = new System.Drawing.Point(29, 63);
+            this.NombreChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NombreChk.Name = "NombreChk";
-            this.NombreChk.Size = new System.Drawing.Size(66, 17);
+            this.NombreChk.Size = new System.Drawing.Size(84, 21);
             this.NombreChk.TabIndex = 5;
             this.NombreChk.Text = "Nombre:";
             this.NombreChk.UseVisualStyleBackColor = true;
@@ -71,9 +75,10 @@
             // ListTodoChk
             // 
             this.ListTodoChk.AutoSize = true;
-            this.ListTodoChk.Location = new System.Drawing.Point(22, 86);
+            this.ListTodoChk.Location = new System.Drawing.Point(29, 106);
+            this.ListTodoChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ListTodoChk.Name = "ListTodoChk";
-            this.ListTodoChk.Size = new System.Drawing.Size(75, 17);
+            this.ListTodoChk.Size = new System.Drawing.Size(97, 21);
             this.ListTodoChk.TabIndex = 4;
             this.ListTodoChk.Text = "Listar todo";
             this.ListTodoChk.UseVisualStyleBackColor = true;
@@ -81,9 +86,10 @@
             // 
             // BuscarBtn
             // 
-            this.BuscarBtn.Location = new System.Drawing.Point(212, 158);
+            this.BuscarBtn.Location = new System.Drawing.Point(283, 194);
+            this.BuscarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuscarBtn.Name = "BuscarBtn";
-            this.BuscarBtn.Size = new System.Drawing.Size(83, 32);
+            this.BuscarBtn.Size = new System.Drawing.Size(111, 39);
             this.BuscarBtn.TabIndex = 5;
             this.BuscarBtn.Text = "Buscar";
             this.BuscarBtn.UseVisualStyleBackColor = true;
@@ -91,9 +97,10 @@
             // 
             // CerrarBtn
             // 
-            this.CerrarBtn.Location = new System.Drawing.Point(353, 158);
+            this.CerrarBtn.Location = new System.Drawing.Point(471, 194);
+            this.CerrarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(83, 32);
+            this.CerrarBtn.Size = new System.Drawing.Size(111, 39);
             this.CerrarBtn.TabIndex = 6;
             this.CerrarBtn.Text = "Cerrar";
             this.CerrarBtn.UseVisualStyleBackColor = true;
@@ -101,13 +108,17 @@
             // 
             // ProveedorBusqFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 202);
+            this.ClientSize = new System.Drawing.Size(611, 249);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.BuscarBtn);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ProveedorBusqFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProveedorBusqFrm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
