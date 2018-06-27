@@ -31,7 +31,7 @@
             this.IdMsk = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.IdProveedorTxt = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.IdProveedor = new System.Windows.Forms.Label();
             this.IdCategoriaTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.DescripcionTxt = new System.Windows.Forms.TextBox();
@@ -42,13 +42,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.AceptarBtn = new System.Windows.Forms.Button();
             this.CancelarBtn = new System.Windows.Forms.Button();
+            this.ProveedorCbo = new System.Windows.Forms.ComboBox();
+            this.CategoriaCbo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // IdMsk
             // 
             this.IdMsk.Enabled = false;
             this.IdMsk.Location = new System.Drawing.Point(172, 53);
-            this.IdMsk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdMsk.Margin = new System.Windows.Forms.Padding(4);
             this.IdMsk.Mask = "999999999";
             this.IdMsk.Name = "IdMsk";
             this.IdMsk.ReadOnly = true;
@@ -67,26 +69,28 @@
             // 
             // IdProveedorTxt
             // 
+            this.IdProveedorTxt.Enabled = false;
             this.IdProveedorTxt.Location = new System.Drawing.Point(172, 101);
-            this.IdProveedorTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdProveedorTxt.Margin = new System.Windows.Forms.Padding(4);
             this.IdProveedorTxt.Name = "IdProveedorTxt";
             this.IdProveedorTxt.Size = new System.Drawing.Size(189, 22);
             this.IdProveedorTxt.TabIndex = 7;
             // 
-            // label3
+            // IdProveedor
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 101);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Id Proveedor";
+            this.IdProveedor.AutoSize = true;
+            this.IdProveedor.Location = new System.Drawing.Point(32, 101);
+            this.IdProveedor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.IdProveedor.Name = "IdProveedor";
+            this.IdProveedor.Size = new System.Drawing.Size(89, 17);
+            this.IdProveedor.TabIndex = 6;
+            this.IdProveedor.Text = "Id Proveedor";
             // 
             // IdCategoriaTxt
             // 
+            this.IdCategoriaTxt.Enabled = false;
             this.IdCategoriaTxt.Location = new System.Drawing.Point(172, 161);
-            this.IdCategoriaTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdCategoriaTxt.Margin = new System.Windows.Forms.Padding(4);
             this.IdCategoriaTxt.Name = "IdCategoriaTxt";
             this.IdCategoriaTxt.Size = new System.Drawing.Size(189, 22);
             this.IdCategoriaTxt.TabIndex = 9;
@@ -104,7 +108,7 @@
             // DescripcionTxt
             // 
             this.DescripcionTxt.Location = new System.Drawing.Point(172, 222);
-            this.DescripcionTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DescripcionTxt.Margin = new System.Windows.Forms.Padding(4);
             this.DescripcionTxt.Name = "DescripcionTxt";
             this.DescripcionTxt.Size = new System.Drawing.Size(189, 22);
             this.DescripcionTxt.TabIndex = 11;
@@ -122,7 +126,7 @@
             // PrecioUnitarioTxt
             // 
             this.PrecioUnitarioTxt.Location = new System.Drawing.Point(172, 278);
-            this.PrecioUnitarioTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PrecioUnitarioTxt.Margin = new System.Windows.Forms.Padding(4);
             this.PrecioUnitarioTxt.Name = "PrecioUnitarioTxt";
             this.PrecioUnitarioTxt.Size = new System.Drawing.Size(189, 22);
             this.PrecioUnitarioTxt.TabIndex = 13;
@@ -140,7 +144,7 @@
             // ExistenciaTxt
             // 
             this.ExistenciaTxt.Location = new System.Drawing.Point(173, 341);
-            this.ExistenciaTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExistenciaTxt.Margin = new System.Windows.Forms.Padding(4);
             this.ExistenciaTxt.Name = "ExistenciaTxt";
             this.ExistenciaTxt.Size = new System.Drawing.Size(189, 22);
             this.ExistenciaTxt.TabIndex = 15;
@@ -158,7 +162,7 @@
             // AceptarBtn
             // 
             this.AceptarBtn.Location = new System.Drawing.Point(76, 434);
-            this.AceptarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AceptarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AceptarBtn.Name = "AceptarBtn";
             this.AceptarBtn.Size = new System.Drawing.Size(111, 38);
             this.AceptarBtn.TabIndex = 17;
@@ -169,7 +173,7 @@
             // CancelarBtn
             // 
             this.CancelarBtn.Location = new System.Drawing.Point(267, 434);
-            this.CancelarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CancelarBtn.Name = "CancelarBtn";
             this.CancelarBtn.Size = new System.Drawing.Size(111, 38);
             this.CancelarBtn.TabIndex = 18;
@@ -177,11 +181,31 @@
             this.CancelarBtn.UseVisualStyleBackColor = true;
             this.CancelarBtn.Click += new System.EventHandler(this.CancelarBtn_Click);
             // 
+            // ProveedorCbo
+            // 
+            this.ProveedorCbo.FormattingEnabled = true;
+            this.ProveedorCbo.Location = new System.Drawing.Point(173, 131);
+            this.ProveedorCbo.Name = "ProveedorCbo";
+            this.ProveedorCbo.Size = new System.Drawing.Size(188, 24);
+            this.ProveedorCbo.TabIndex = 19;
+            this.ProveedorCbo.SelectedIndexChanged += new System.EventHandler(this.ProveedorCbo_SelectedIndexChanged);
+            // 
+            // CategoriaCbo
+            // 
+            this.CategoriaCbo.FormattingEnabled = true;
+            this.CategoriaCbo.Location = new System.Drawing.Point(173, 190);
+            this.CategoriaCbo.Name = "CategoriaCbo";
+            this.CategoriaCbo.Size = new System.Drawing.Size(188, 24);
+            this.CategoriaCbo.TabIndex = 20;
+            this.CategoriaCbo.SelectedIndexChanged += new System.EventHandler(this.CategoriaCbo_SelectedIndexChanged);
+            // 
             // ProductoAMFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 501);
+            this.Controls.Add(this.CategoriaCbo);
+            this.Controls.Add(this.ProveedorCbo);
             this.Controls.Add(this.CancelarBtn);
             this.Controls.Add(this.AceptarBtn);
             this.Controls.Add(this.ExistenciaTxt);
@@ -193,10 +217,10 @@
             this.Controls.Add(this.IdCategoriaTxt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.IdProveedorTxt);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.IdProveedor);
             this.Controls.Add(this.IdMsk);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ProductoAMFrm";
@@ -212,7 +236,7 @@
         private System.Windows.Forms.MaskedTextBox IdMsk;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox IdProveedorTxt;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label IdProveedor;
         private System.Windows.Forms.TextBox IdCategoriaTxt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox DescripcionTxt;
@@ -223,5 +247,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button AceptarBtn;
         private System.Windows.Forms.Button CancelarBtn;
+        private System.Windows.Forms.ComboBox ProveedorCbo;
+        private System.Windows.Forms.ComboBox CategoriaCbo;
     }
 }

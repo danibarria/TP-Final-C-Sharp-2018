@@ -19,6 +19,14 @@ namespace WinNegocio.Formularios
         public OrdenAMFrm()
         {
             InitializeComponent();
+
+            this.EmpleadoCbo.DisplayMember = "Apellido";
+            this.EmpleadoCbo.ValueMember = "EmpleadoId";
+            this.EmpleadoCbo.DataSource = ManagerDB<Empleado>.findAll();
+
+            this.ClienteCbo.DisplayMember = "NombreContacto";
+            this.ClienteCbo.ValueMember = "ClienteId";
+            this.ClienteCbo.DataSource = ManagerDB<Cliente>.findAll();
         }
 
         public void ShowOrden(Orden orden, IFormGridReload frmGrid)
@@ -79,5 +87,14 @@ namespace WinNegocio.Formularios
             this.Dispose();
         }
 
+        private void EmpleadoCbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClienteCbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

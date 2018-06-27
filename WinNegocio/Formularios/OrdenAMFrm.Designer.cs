@@ -40,13 +40,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.CancelarBtn = new System.Windows.Forms.Button();
             this.AceptarBtn = new System.Windows.Forms.Button();
+            this.EmpleadoCbo = new System.Windows.Forms.ComboBox();
+            this.ClienteCbo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // IdMsk
             // 
             this.IdMsk.Enabled = false;
             this.IdMsk.Location = new System.Drawing.Point(183, 36);
-            this.IdMsk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdMsk.Margin = new System.Windows.Forms.Padding(4);
             this.IdMsk.Mask = "999999999";
             this.IdMsk.Name = "IdMsk";
             this.IdMsk.ReadOnly = true;
@@ -65,8 +67,9 @@
             // 
             // EmpleadoIdTxt
             // 
-            this.EmpleadoIdTxt.Location = new System.Drawing.Point(183, 108);
-            this.EmpleadoIdTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmpleadoIdTxt.Enabled = false;
+            this.EmpleadoIdTxt.Location = new System.Drawing.Point(183, 80);
+            this.EmpleadoIdTxt.Margin = new System.Windows.Forms.Padding(4);
             this.EmpleadoIdTxt.Name = "EmpleadoIdTxt";
             this.EmpleadoIdTxt.Size = new System.Drawing.Size(189, 22);
             this.EmpleadoIdTxt.TabIndex = 9;
@@ -74,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 108);
+            this.label3.Location = new System.Drawing.Point(33, 80);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 17);
@@ -83,8 +86,9 @@
             // 
             // ClienteTxt
             // 
-            this.ClienteTxt.Location = new System.Drawing.Point(183, 160);
-            this.ClienteTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClienteTxt.Enabled = false;
+            this.ClienteTxt.Location = new System.Drawing.Point(183, 147);
+            this.ClienteTxt.Margin = new System.Windows.Forms.Padding(4);
             this.ClienteTxt.Name = "ClienteTxt";
             this.ClienteTxt.Size = new System.Drawing.Size(189, 22);
             this.ClienteTxt.TabIndex = 11;
@@ -92,7 +96,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 160);
+            this.label2.Location = new System.Drawing.Point(32, 147);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 17);
@@ -102,9 +106,9 @@
             // FechaTxt
             // 
             this.FechaTxt.Location = new System.Drawing.Point(183, 209);
-            this.FechaTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FechaTxt.Margin = new System.Windows.Forms.Padding(4);
             this.FechaTxt.Name = "FechaTxt";
-            this.FechaTxt.Size = new System.Drawing.Size(200, 22);
+            this.FechaTxt.Size = new System.Drawing.Size(189, 22);
             this.FechaTxt.TabIndex = 13;
             // 
             // label4
@@ -119,16 +123,16 @@
             // 
             // DescuentoTxt
             // 
-            this.DescuentoTxt.Location = new System.Drawing.Point(183, 258);
-            this.DescuentoTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DescuentoTxt.Location = new System.Drawing.Point(183, 245);
+            this.DescuentoTxt.Margin = new System.Windows.Forms.Padding(4);
             this.DescuentoTxt.Name = "DescuentoTxt";
-            this.DescuentoTxt.Size = new System.Drawing.Size(200, 22);
+            this.DescuentoTxt.Size = new System.Drawing.Size(189, 22);
             this.DescuentoTxt.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 258);
+            this.label5.Location = new System.Drawing.Point(32, 245);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 17);
@@ -138,7 +142,7 @@
             // CancelarBtn
             // 
             this.CancelarBtn.Location = new System.Drawing.Point(247, 390);
-            this.CancelarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CancelarBtn.Name = "CancelarBtn";
             this.CancelarBtn.Size = new System.Drawing.Size(127, 48);
             this.CancelarBtn.TabIndex = 17;
@@ -149,7 +153,7 @@
             // AceptarBtn
             // 
             this.AceptarBtn.Location = new System.Drawing.Point(36, 391);
-            this.AceptarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AceptarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AceptarBtn.Name = "AceptarBtn";
             this.AceptarBtn.Size = new System.Drawing.Size(127, 47);
             this.AceptarBtn.TabIndex = 16;
@@ -157,11 +161,31 @@
             this.AceptarBtn.UseVisualStyleBackColor = true;
             this.AceptarBtn.Click += new System.EventHandler(this.AceptarBtn_Click);
             // 
+            // EmpleadoCbo
+            // 
+            this.EmpleadoCbo.FormattingEnabled = true;
+            this.EmpleadoCbo.Location = new System.Drawing.Point(183, 111);
+            this.EmpleadoCbo.Name = "EmpleadoCbo";
+            this.EmpleadoCbo.Size = new System.Drawing.Size(189, 24);
+            this.EmpleadoCbo.TabIndex = 18;
+            this.EmpleadoCbo.SelectedIndexChanged += new System.EventHandler(this.EmpleadoCbo_SelectedIndexChanged);
+            // 
+            // ClienteCbo
+            // 
+            this.ClienteCbo.FormattingEnabled = true;
+            this.ClienteCbo.Location = new System.Drawing.Point(183, 177);
+            this.ClienteCbo.Name = "ClienteCbo";
+            this.ClienteCbo.Size = new System.Drawing.Size(189, 24);
+            this.ClienteCbo.TabIndex = 19;
+            this.ClienteCbo.SelectedIndexChanged += new System.EventHandler(this.ClienteCbo_SelectedIndexChanged);
+            // 
             // OrdenAMFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 485);
+            this.Controls.Add(this.ClienteCbo);
+            this.Controls.Add(this.EmpleadoCbo);
             this.Controls.Add(this.CancelarBtn);
             this.Controls.Add(this.AceptarBtn);
             this.Controls.Add(this.DescuentoTxt);
@@ -174,7 +198,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.IdMsk);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OrdenAMFrm";
@@ -199,5 +223,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button CancelarBtn;
         private System.Windows.Forms.Button AceptarBtn;
+        private System.Windows.Forms.ComboBox EmpleadoCbo;
+        private System.Windows.Forms.ComboBox ClienteCbo;
     }
 }
