@@ -34,9 +34,6 @@
             this.CargarCategoriasBtn = new System.Windows.Forms.Button();
             this.ObraSocialAddBtn = new System.Windows.Forms.Button();
             this.gridProducto = new System.Windows.Forms.DataGridView();
-            this.CargarGrillaBtn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.ProductoId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +41,9 @@
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Existencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColCombina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CargarGrillaBtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +54,7 @@
             this.CategoriasCbo.Name = "CategoriasCbo";
             this.CategoriasCbo.Size = new System.Drawing.Size(159, 21);
             this.CategoriasCbo.TabIndex = 0;
+            this.CategoriasCbo.SelectedIndexChanged += new System.EventHandler(this.CategoriasCbo_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -104,33 +105,6 @@
             this.gridProducto.TabIndex = 4;
             this.gridProducto.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridProducto_DataBindingComplete);
             // 
-            // CargarGrillaBtn
-            // 
-            this.CargarGrillaBtn.Location = new System.Drawing.Point(495, 61);
-            this.CargarGrillaBtn.Name = "CargarGrillaBtn";
-            this.CargarGrillaBtn.Size = new System.Drawing.Size(120, 37);
-            this.CargarGrillaBtn.TabIndex = 5;
-            this.CargarGrillaBtn.Text = "Cargar";
-            this.CargarGrillaBtn.UseVisualStyleBackColor = true;
-            this.CargarGrillaBtn.Click += new System.EventHandler(this.CargarGrillaBtn_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(208, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Grilla de  ejemplo";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(303, 247);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(449, 64);
-            this.label3.TabIndex = 7;
-            this.label3.Text = resources.GetString("label3.Text");
-            // 
             // ProductoId
             // 
             this.ProductoId.DataPropertyName = "ProductoId";
@@ -172,6 +146,33 @@
             // 
             this.ColCombina.HeaderText = "ColCombina";
             this.ColCombina.Name = "ColCombina";
+            // 
+            // CargarGrillaBtn
+            // 
+            this.CargarGrillaBtn.Location = new System.Drawing.Point(495, 61);
+            this.CargarGrillaBtn.Name = "CargarGrillaBtn";
+            this.CargarGrillaBtn.Size = new System.Drawing.Size(120, 37);
+            this.CargarGrillaBtn.TabIndex = 5;
+            this.CargarGrillaBtn.Text = "Cargar";
+            this.CargarGrillaBtn.UseVisualStyleBackColor = true;
+            this.CargarGrillaBtn.Click += new System.EventHandler(this.CargarGrillaBtn_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(208, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Grilla de  ejemplo";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(303, 247);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(449, 64);
+            this.label3.TabIndex = 7;
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // FormTestModel
             // 
