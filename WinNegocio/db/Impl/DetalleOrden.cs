@@ -71,7 +71,7 @@ namespace LibNegocio.db
             {
                 string vvalues = String.Join(",", this.list_values());
                 string sqliu = (this.IsNew ? "insert into {0} ({1}) values ({2})" : "update  {0} set {1} where {2}");
-                return String.Format(sqliu, this.TableName, (this.IsNew ? String.Join(",", _columns)/*.Replace("orden_id,","")*/ : vvalues), (this.IsNew ? vvalues : String.Format("orden_id = {0}", this.OrdenId)));
+                return String.Format(sqliu, this.TableName, (this.IsNew ? String.Join(",", _columns)/*.Replace("orden_id,","")*/ : vvalues), (this.IsNew ? vvalues : String.Format("orden_id = {0} and detalle_id = {1}", this.OrdenId,this.DetalleId)));
             }
         }
 
