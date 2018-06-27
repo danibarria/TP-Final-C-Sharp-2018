@@ -66,6 +66,11 @@ namespace WinNegocio.Formularios
 
         }
 
+        private void CategoriasCbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }

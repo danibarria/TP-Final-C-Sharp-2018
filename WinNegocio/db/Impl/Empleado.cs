@@ -21,6 +21,7 @@ namespace LibNegocio.db
             Empleado p = (Empleado)ManagerDB<Empleado>.findbyKey(key);
             this.FechaNac = p.FechaNac;
             this.Apellido = p.Apellido;
+            this.Nombre = p.Nombre;
             this.EmpleadoId = p.EmpleadoId;
             this.IsNew = false;
             return this;          
@@ -47,9 +48,13 @@ namespace LibNegocio.db
             this._apellido = dr[_columns[2]].ToString().Trim();
             this._fecha_nac = DateTime.Parse(dr[_columns[3]].ToString());
             if (dr[_columns[4]].ToString() == "")
+            {
                 this._reporta_a = 0;
+            }
             else
+            {
                 this._reporta_a = Int32.Parse(dr[_columns[4]].ToString());
+            }
             this._extension = Int32.Parse(dr[_columns[5]].ToString());
             this.IsNew = false;
         }

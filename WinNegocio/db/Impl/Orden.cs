@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LibNegocio.db
 {
-    public partial class Orden : CommonObj, IAccessDB<Orden>, ITable
+    public partial class Orden : CommonObj, IAccessDB<Orden>, ITable, IAutoIncrement
     {
         private string[] _columns = { "orden_id", "empleado_id", "cliente_id", "fecha_orden", "descuento" };
         public List<Orden> findAll()
@@ -48,7 +48,14 @@ namespace LibNegocio.db
             this._empleado_id = Int32.Parse(dr[_columns[1]].ToString());
             this._cliente_id = Int32.Parse(dr[_columns[2]].ToString());
 			this._fecha_orden = DateTime.Parse(dr[_columns[3]].ToString());
-            this._descuento = Int32.Parse(dr[_columns[4]].ToString());            
+            if (dr[_columns[4]].ToString() == "")
+            {
+                this._descuento = 0;
+            }
+            else { 
+                this._descuento = Int32.Parse(dr[_columns[4]].ToString()); 
+            }
+            
             this.IsNew = false;
         }
         public string[] columns
@@ -59,6 +66,9 @@ namespace LibNegocio.db
         {
             // "orden_id", "empleado_id", "cliente_id", "fecha_orden", "descuento" 
             string[] values = { 
+                                (this.IsNew?"":_columns[0] + "=")+String.Format("'{0}'",this._orden_id),//formato cadena ''
+                                (this.IsNew?"":_columns[1] + "=")+String.Format("'{0}'",this._empleado_id),//formato cadena ''
+                                (this.IsNew?"":_columns[2] + "=")+String.Format("'{0}'",this._cliente_id),//formato cadena ''
                                 (this.IsNew?"":_columns[3] + "=")+String.Format("'{0}'",this._fecha_orden.ToString("yyyy-MM-dd HH:mm")),//formato cadena ''
                                 (this.IsNew?"":_columns[4] + "=")+String.Format("'{0}'",this._descuento),//formato cadena ''                                
                               };
@@ -71,13 +81,13 @@ namespace LibNegocio.db
             {
                 string vvalues = String.Join(",", this.list_values());
                 string sqliu = (this.IsNew ? "insert into {0} ({1}) values ({2})" : "update  {0} set {1} where {2}");
-                return String.Format(sqliu, this.TableName, (this.IsNew ? String.Join(",", _columns).Replace("orden_id,","") : vvalues), (this.IsNew ? vvalues : String.Format("orden_id = {0}", this.OrdenId)));
+                return String.Format(sqliu, this.TableName, (this.IsNew ? String.Join(",", _columns)/*.Replace("orden_id,","")*/ : vvalues), (this.IsNew ? vvalues : String.Format("orden_id = {0}", this.OrdenId)));
             }
         }
 
         public void setKeyValue(object valueId)
         {
-            throw new NotImplementedException();
+            this._orden_id = Convert.ToInt32(valueId);
         }
 
         public string sqlKeyWhere(params object[] values)

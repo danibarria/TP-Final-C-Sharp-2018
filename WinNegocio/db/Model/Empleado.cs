@@ -15,6 +15,7 @@ namespace LibNegocio.db
 		private string _apellido;
         private int _reporta_a;
         private int _extension;
+        private Empleado _reporta_empleado=null;
 		#endregion
 
         #region propiedades publicas
@@ -53,6 +54,32 @@ namespace LibNegocio.db
         {
             get { return _extension; }
             set { _extension = value; }
+        }
+
+        public Empleado ReportaEmpleadoObj
+        {
+            get
+            {
+                if (this._reporta_a != 0 && this._reporta_empleado == null)
+                {
+                    _reporta_empleado = new Empleado();
+                    _reporta_empleado.findbykey(_reporta_a);
+                }
+                return _reporta_empleado;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    _reporta_a = 0;
+                }
+                else
+                {
+                    if (value.EmpleadoId != _reporta_a)
+                        _reporta_a = value.EmpleadoId;
+                }
+                _reporta_empleado = value;
+            }
         }
         
         #endregion

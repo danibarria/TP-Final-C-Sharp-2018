@@ -50,6 +50,7 @@ namespace WinNegocio.Formularios
                 cedula_ruc = this.CeulaRucTxt.Text;
             if(this.NombreCiaChk.Checked)
                 nombre_cia = this.NombreCiaTxt.Text;
+
             pfrm = new ClientesResultsFrm();
             if (this.operacion == OperacionForm.frmConsulta)
             {

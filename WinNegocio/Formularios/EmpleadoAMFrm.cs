@@ -80,5 +80,10 @@ namespace WinNegocio.Formularios
             //_frmGrid.ReloadGrid();
             this.Dispose();
         }
+
+        private void EmpleadoAMFrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

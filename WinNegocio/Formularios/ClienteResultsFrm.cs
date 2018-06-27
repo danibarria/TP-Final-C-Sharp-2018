@@ -19,6 +19,7 @@ namespace WinNegocio.Formularios
         {
             InitializeComponent();
         }
+
         public void NewListado()
         {
             this.operacion = OperacionForm.frmConsulta;
@@ -83,7 +84,7 @@ namespace WinNegocio.Formularios
             }
         }
 
-        private void gridClientes_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        /*private void gridClientes_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             Cliente p;
             foreach (DataGridViewRow row in gridClientes.Rows)
@@ -93,7 +94,7 @@ namespace WinNegocio.Formularios
                 cell = row.Cells[1];
                 cell.Value = String.Format("{0}, {1}", p.CedulaRuc, p.NombreCia);
             }
-        }
+        }*/
 
         private void NuevoClienteBtn_Click(object sender, EventArgs e)
         {

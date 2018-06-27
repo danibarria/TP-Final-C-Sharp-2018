@@ -85,6 +85,7 @@ namespace WinNegocio.Formularios
                 descripcion = this.DescripcionTxt.Text;
             
             pfrm = new ProductoResultsFrm(); 
+
             if (this.operacion == OperacionForm.frmConsulta)
             {
                 pfrm.NewListado();

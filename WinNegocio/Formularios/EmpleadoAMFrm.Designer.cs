@@ -90,9 +90,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(24, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Apllido:";
+            this.label2.Text = "Apellido:";
             // 
             // FechaNacimientoTxt
             // 
@@ -183,6 +183,7 @@
             this.Controls.Add(this.proveedorId);
             this.Name = "EmpleadoAMFrm";
             this.Text = "EmpleadoAMFrm";
+            this.Load += new System.EventHandler(this.EmpleadoAMFrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
