@@ -135,7 +135,7 @@ namespace WinNegocio.Formularios
 
                 private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            CategoriaAltaFrm frm = new CategoriaAltaFrm();
+            CategoriaAMFrm frm = new CategoriaAMFrm();
             frm.ShowDialog();
         }
         private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
