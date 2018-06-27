@@ -94,6 +94,12 @@
     <Compile Include="Formularios\CategoriaResultsFrm.Designer.cs">
       <DependentUpon>CategoriaResultsFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\DetalleOrdenAMFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DetalleOrdenAMFrm.Designer.cs">
+      <DependentUpon>DetalleOrdenAMFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\EmpleadoAMFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,30 @@
     </Compile>
     <Compile Include="Formularios\ClienteResultsFrm.Designer.cs">
       <DependentUpon>ClienteResultsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OrdenAMFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OrdenAMFrm.Designer.cs">
+      <DependentUpon>OrdenAMFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OrdenBusqFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OrdenBusqFrm.Designer.cs">
+      <DependentUpon>OrdenBusqFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OrdenDetalleResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OrdenDetalleResultsFrm.Designer.cs">
+      <DependentUpon>OrdenDetalleResultsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\OrdenResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\OrdenResultsFrm.Designer.cs">
+      <DependentUpon>OrdenResultsFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\PrincipalFrm.cs">
       <SubType>Form</SubType>
@@ -193,6 +223,9 @@
     <EmbeddedResource Include="Formularios\CategoriaResultsFrm.resx">
       <DependentUpon>CategoriaResultsFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DetalleOrdenAMFrm.resx">
+      <DependentUpon>DetalleOrdenAMFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\EmpleadoAMFrm.resx">
       <DependentUpon>EmpleadoAMFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +246,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ClienteResultsFrm.resx">
       <DependentUpon>ClienteResultsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OrdenAMFrm.resx">
+      <DependentUpon>OrdenAMFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OrdenBusqFrm.resx">
+      <DependentUpon>OrdenBusqFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OrdenDetalleResultsFrm.resx">
+      <DependentUpon>OrdenDetalleResultsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\OrdenResultsFrm.resx">
+      <DependentUpon>OrdenResultsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PrincipalFrm.resx">
       <DependentUpon>PrincipalFrm.cs</DependentUpon>

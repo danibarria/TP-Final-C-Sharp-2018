@@ -90,3 +90,12 @@ C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Debug\fr\Npgsql.resource
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Debug\ja\Npgsql.resources.dll
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\bin\Debug\zh-CN\Npgsql.resources.dll
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.pdb
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaAltaFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaMCFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.CategoriaResultsFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.DetalleOrdenAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenAMFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenBusqFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenDetalleResultsFrm.resources
+C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenResultsFrm.resources
