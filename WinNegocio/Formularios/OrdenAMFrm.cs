@@ -89,12 +89,16 @@ namespace WinNegocio.Formularios
 
         private void EmpleadoCbo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Empleado p = new Empleado();
+            p = (this.EmpleadoCbo.SelectedItem as Empleado);
+            this.EmpleadoIdTxt.Text = p.EmpleadoId.ToString();
         }
 
         private void ClienteCbo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Cliente p = new Cliente();
+            p = (this.ClienteCbo.SelectedItem as Cliente);
+            this.ClienteTxt.Text = p.ClienteId.ToString();
         }
     }
 }
