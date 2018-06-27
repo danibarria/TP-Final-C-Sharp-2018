@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.gridEmpleado = new System.Windows.Forms.DataGridView();
+            this.CerrarBtn = new System.Windows.Forms.Button();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReportaA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Extension = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CerrarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,15 +47,24 @@
             this.FechaNacimiento,
             this.ReportaA,
             this.Extension});
-            this.gridEmpleado.Location = new System.Drawing.Point(16, 15);
-            this.gridEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridEmpleado.Location = new System.Drawing.Point(12, 12);
             this.gridEmpleado.Name = "gridEmpleado";
             this.gridEmpleado.ReadOnly = true;
             this.gridEmpleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridEmpleado.Size = new System.Drawing.Size(833, 389);
+            this.gridEmpleado.Size = new System.Drawing.Size(625, 316);
             this.gridEmpleado.TabIndex = 0;
             this.gridEmpleado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridEmpleado_CellDoubleClick);
             this.gridEmpleado.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridEmpleado_DataBindingComplete);
+            // 
+            // CerrarBtn
+            // 
+            this.CerrarBtn.Location = new System.Drawing.Point(498, 367);
+            this.CerrarBtn.Name = "CerrarBtn";
+            this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
+            this.CerrarBtn.TabIndex = 17;
+            this.CerrarBtn.Text = "Cerrar";
+            this.CerrarBtn.UseVisualStyleBackColor = true;
+            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
             // 
             // Nombre
             // 
@@ -91,29 +100,14 @@
             this.Extension.Name = "Extension";
             this.Extension.ReadOnly = true;
             // 
-            // CerrarBtn
-            // 
-            this.CerrarBtn.Location = new System.Drawing.Point(664, 452);
-            this.CerrarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(112, 33);
-            this.CerrarBtn.TabIndex = 17;
-            this.CerrarBtn.Text = "Cerrar";
-            this.CerrarBtn.UseVisualStyleBackColor = true;
-            this.CerrarBtn.Click += new System.EventHandler(this.CerrarBtn_Click);
-            // 
             // EmpleadoResultsFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 500);
+            this.ClientSize = new System.Drawing.Size(639, 406);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.gridEmpleado);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "EmpleadoResultsFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmpleadoResultsFrm";
             ((System.ComponentModel.ISupportInitialize)(this.gridEmpleado)).EndInit();
             this.ResumeLayout(false);

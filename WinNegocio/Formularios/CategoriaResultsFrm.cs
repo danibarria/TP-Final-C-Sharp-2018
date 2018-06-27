@@ -69,7 +69,7 @@ namespace WinNegocio.Formularios
         {
             if (this.operacion == OperacionForm.frmModificacion)
             {
-                CategoriaAMFrm frm = new CategoriaAMFrm();
+                CategoriaAltaFrm frm = new CategoriaAltaFrm();
                 frm.ShowCategoria((this.gridCategoria.Rows[e.RowIndex].DataBoundItem as Categoria),this);
             }
         }

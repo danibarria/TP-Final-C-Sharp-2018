@@ -49,19 +49,19 @@
             this.IdMsk.Enabled = false;
             this.IdMsk.Location = new System.Drawing.Point(183, 36);
             this.IdMsk.Margin = new System.Windows.Forms.Padding(4);
+
             this.IdMsk.Mask = "999999999";
             this.IdMsk.Name = "IdMsk";
             this.IdMsk.ReadOnly = true;
-            this.IdMsk.Size = new System.Drawing.Size(140, 22);
+            this.IdMsk.Size = new System.Drawing.Size(106, 20);
             this.IdMsk.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(24, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 17);
+            this.label1.Size = new System.Drawing.Size(16, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Id";
             // 
@@ -70,8 +70,9 @@
             this.EmpleadoIdTxt.Enabled = false;
             this.EmpleadoIdTxt.Location = new System.Drawing.Point(183, 80);
             this.EmpleadoIdTxt.Margin = new System.Windows.Forms.Padding(4);
+
             this.EmpleadoIdTxt.Name = "EmpleadoIdTxt";
-            this.EmpleadoIdTxt.Size = new System.Drawing.Size(189, 22);
+            this.EmpleadoIdTxt.Size = new System.Drawing.Size(143, 20);
             this.EmpleadoIdTxt.TabIndex = 9;
             // 
             // label3
@@ -80,7 +81,7 @@
             this.label3.Location = new System.Drawing.Point(33, 80);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Empleado Id";
             // 
@@ -89,8 +90,9 @@
             this.ClienteTxt.Enabled = false;
             this.ClienteTxt.Location = new System.Drawing.Point(183, 147);
             this.ClienteTxt.Margin = new System.Windows.Forms.Padding(4);
+
             this.ClienteTxt.Name = "ClienteTxt";
-            this.ClienteTxt.Size = new System.Drawing.Size(189, 22);
+            this.ClienteTxt.Size = new System.Drawing.Size(143, 20);
             this.ClienteTxt.TabIndex = 11;
             // 
             // label2
@@ -98,8 +100,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(32, 147);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Cliente Id";
             // 
@@ -109,15 +112,15 @@
             this.FechaTxt.Margin = new System.Windows.Forms.Padding(4);
             this.FechaTxt.Name = "FechaTxt";
             this.FechaTxt.Size = new System.Drawing.Size(189, 22);
+
             this.FechaTxt.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 209);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(24, 170);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 17);
+            this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "Fecha:";
             // 
@@ -127,6 +130,7 @@
             this.DescuentoTxt.Margin = new System.Windows.Forms.Padding(4);
             this.DescuentoTxt.Name = "DescuentoTxt";
             this.DescuentoTxt.Size = new System.Drawing.Size(189, 22);
+
             this.DescuentoTxt.TabIndex = 15;
             // 
             // label5
@@ -134,17 +138,19 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(32, 245);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 17);
+            this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 14;
             this.label5.Text = "Descuento:";
             // 
             // CancelarBtn
             // 
+
             this.CancelarBtn.Location = new System.Drawing.Point(247, 390);
             this.CancelarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CancelarBtn.Name = "CancelarBtn";
-            this.CancelarBtn.Size = new System.Drawing.Size(127, 48);
+            this.CancelarBtn.Size = new System.Drawing.Size(95, 39);
             this.CancelarBtn.TabIndex = 17;
             this.CancelarBtn.Text = "Cancelar";
             this.CancelarBtn.UseVisualStyleBackColor = true;
@@ -154,8 +160,9 @@
             // 
             this.AceptarBtn.Location = new System.Drawing.Point(36, 391);
             this.AceptarBtn.Margin = new System.Windows.Forms.Padding(4);
+
             this.AceptarBtn.Name = "AceptarBtn";
-            this.AceptarBtn.Size = new System.Drawing.Size(127, 47);
+            this.AceptarBtn.Size = new System.Drawing.Size(95, 38);
             this.AceptarBtn.TabIndex = 16;
             this.AceptarBtn.Text = "Aceptar";
             this.AceptarBtn.UseVisualStyleBackColor = true;
@@ -181,11 +188,12 @@
             // 
             // OrdenAMFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 485);
             this.Controls.Add(this.ClienteCbo);
             this.Controls.Add(this.EmpleadoCbo);
+
             this.Controls.Add(this.CancelarBtn);
             this.Controls.Add(this.AceptarBtn);
             this.Controls.Add(this.DescuentoTxt);
@@ -202,7 +210,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OrdenAMFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrdenAMFrm";
             this.ResumeLayout(false);
             this.PerformLayout();
