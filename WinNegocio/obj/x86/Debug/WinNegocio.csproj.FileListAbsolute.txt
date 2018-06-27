@@ -99,3 +99,8 @@ C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\o
 C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenBusqFrm.resources
 C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenDetalleResultsFrm.resources
 C:\Universidad 3Año\Laboratorios\CShardFinal\TP-Final-C-Sharp-2018\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenResultsFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.DetalleOrdenAMFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenAMFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenBusqFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenDetalleResultsFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Debug\WinNegocio.Formularios.OrdenResultsFrm.resources
