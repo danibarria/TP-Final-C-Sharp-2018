@@ -19,6 +19,13 @@ namespace WinNegocio.Formularios
         public ProductoAMFrm()
         {
             InitializeComponent();
+            this.ProveedorCbo.DisplayMember = "NombreProveedor";
+            this.ProveedorCbo.ValueMember = "ProveedorId";
+            this.ProveedorCbo.DataSource = ManagerDB<Proveedor>.findAll();
+
+            this.CategoriaCbo.DisplayMember = "NombreCategoria";
+            this.CategoriaCbo.ValueMember = "CategoriaId";
+            this.CategoriaCbo.DataSource = ManagerDB<Categoria>.findAll();
         }
         public void ShowProducto(Producto producto, IFormGridReload frmGrid)
         {
@@ -79,5 +86,21 @@ namespace WinNegocio.Formularios
             //_frmGrid.ReloadGrid();
             this.Dispose();
         }
+
+        private void ProveedorCbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Proveedor p = new Proveedor();
+            p = (this.ProveedorCbo.SelectedItem as Proveedor);
+            this.IdProveedorTxt.Text = p.ProveedorId.ToString();
+        }
+
+        private void CategoriaCbo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            Categoria c = new Categoria();
+            c = (this.CategoriaCbo.SelectedItem as Categoria);
+            this.IdCategoriaTxt.Text = c.CategoriaId.ToString();
+        }
+
     }
 }
