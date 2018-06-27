@@ -160,6 +160,7 @@
             this.modificacionToolStripMenuItem2.Name = "modificacionToolStripMenuItem2";
             this.modificacionToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.modificacionToolStripMenuItem2.Text = "Modificacion";
+            this.modificacionToolStripMenuItem2.Click += new System.EventHandler(this.modificacionToolStripMenuItem2_Click);
             // 
             // listadoToolStripMenuItem2
             // 
@@ -180,14 +181,16 @@
             // altaToolStripMenuItem3
             // 
             this.altaToolStripMenuItem3.Name = "altaToolStripMenuItem3";
-            this.altaToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
+            this.altaToolStripMenuItem3.Size = new System.Drawing.Size(165, 24);
             this.altaToolStripMenuItem3.Text = "Alta";
             this.altaToolStripMenuItem3.Click += new System.EventHandler(this.altaToolStripMenuItem3_Click);
             // 
             // modificacionToolStripMenuItem3
             // 
             this.modificacionToolStripMenuItem3.Name = "modificacionToolStripMenuItem3";
+
             this.modificacionToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
+
             this.modificacionToolStripMenuItem3.Text = "Modificacion";
             this.modificacionToolStripMenuItem3.Click += new System.EventHandler(this.modificacionToolStripMenuItem3_Click);
             // 
@@ -195,6 +198,7 @@
             // 
             this.listadoToolStripMenuItem3.Name = "listadoToolStripMenuItem3";
             this.listadoToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
+
             this.listadoToolStripMenuItem3.Text = "Listado";
             this.listadoToolStripMenuItem3.Click += new System.EventHandler(this.listadoToolStripMenuItem3_Click);
             // 
@@ -205,13 +209,14 @@
             this.modificacionToolStripMenuItem5,
             this.listadoToolStripMenuItem5});
             this.empleadoToolStripMenuItem.Name = "empleadoToolStripMenuItem";
-            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.empleadoToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.empleadoToolStripMenuItem.Text = "Empleado";
             // 
             // altaToolStripMenuItem5
             // 
             this.altaToolStripMenuItem5.Name = "altaToolStripMenuItem5";
             this.altaToolStripMenuItem5.Size = new System.Drawing.Size(132, 22);
+
             this.altaToolStripMenuItem5.Text = "Alta";
             this.altaToolStripMenuItem5.Click += new System.EventHandler(this.altaToolStripMenuItem5_Click);
             // 
@@ -270,6 +275,7 @@
             // FormTestBtn
             // 
             this.FormTestBtn.Location = new System.Drawing.Point(220, 193);
+
             this.FormTestBtn.Name = "FormTestBtn";
             this.FormTestBtn.Size = new System.Drawing.Size(90, 46);
             this.FormTestBtn.TabIndex = 35;
@@ -305,6 +311,7 @@
             this.Controls.Add(this.FormTestBtn);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+
             this.MaximizeBox = false;
             this.Name = "PrincipalFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

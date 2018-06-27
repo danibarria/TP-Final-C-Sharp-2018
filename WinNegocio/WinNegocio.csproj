@@ -70,6 +70,30 @@
     <Compile Include="db\Model\Cliente.cs" />
     <Compile Include="db\Model\Empleado.cs" />
     <Compile Include="db\Utils.cs" />
+    <Compile Include="Formularios\CategoriaAltaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CategoriaAltaFrm.Designer.cs">
+      <DependentUpon>CategoriaAltaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CategoriaBusqFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CategoriaBusqFrm.Designer.cs">
+      <DependentUpon>CategoriaBusqFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CategoriaMCFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CategoriaMCFrm.Designer.cs">
+      <DependentUpon>CategoriaMCFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CategoriaResultsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CategoriaResultsFrm.Designer.cs">
+      <DependentUpon>CategoriaResultsFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\EmpleadoAMFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +181,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\IFormGridReload.cs" />
+    <EmbeddedResource Include="Formularios\CategoriaAltaFrm.resx">
+      <DependentUpon>CategoriaAltaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CategoriaBusqFrm.resx">
+      <DependentUpon>CategoriaBusqFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CategoriaMCFrm.resx">
+      <DependentUpon>CategoriaMCFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CategoriaResultsFrm.resx">
+      <DependentUpon>CategoriaResultsFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\EmpleadoAMFrm.resx">
       <DependentUpon>EmpleadoAMFrm.cs</DependentUpon>
     </EmbeddedResource>

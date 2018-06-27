@@ -12,6 +12,7 @@ namespace WinNegocio.Formularios
 {
     public partial class CategoriaAltaFrm : Form
     {
+        IFormGridReload _frmGrid;
         OperacionForm operacion = OperacionForm.frmAlta;
         Categoria nuevaCategoria;
         public CategoriaAltaFrm()
@@ -29,18 +30,40 @@ namespace WinNegocio.Formularios
 
         }
 
-        private void AltaCategoria_TextChanged(object sender, EventArgs e)
-        {
-            //unimplemented
-        }
         private void Guardar_Click_1(object sender, EventArgs e)
         {
-            nuevaCategoria = new Categoria();
+            try 
+            {
+                if (this.operacion == OperacionForm.frmAlta)
+                {
+                    nuevaCategoria = new Categoria();
 
-            nuevaCategoria.NombreCategoria = this.AltaCategoria.Text;
-            nuevaCategoria.saveObj();
-            
-            this.Dispose(); //cerrar ventana
+                }
+                nuevaCategoria.NombreCategoria = this.AltaCategoria.Text;
+                
+                if (!nuevaCategoria.saveObj())
+                {
+                    MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nuevo Categoria" : "Error al intentar editar informacion de Categoria", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                MessageBox.Show(operacion == OperacionForm.frmAlta ? "Nueva Categoria dado de alta" : "Actualizacion de informacion de Categoria", operacion == OperacionForm.frmAlta ? "Ingreso de Categoria..." : "Actualizacion de informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //nuevaCategoria.saveObj();
+                this.Dispose(); //cerrar ventana
+            }catch(Exception ex){
+                MessageBox.Show("Error al intentar " + (operacion == OperacionForm.frmAlta ? "ingresar nuevo Categoria" : "actualizar informacion") + ex.Message, "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+        }
+        public void ShowCategoria(Categoria c, IFormGridReload frmGrid)
+        {
+            _frmGrid = frmGrid;
+            this.operacion = OperacionForm.frmModificacion;
+            this.Text = "Modificacion de infromacion de Categoria";
+            nuevaCategoria = c;
+            this.AltaCategoria.Text = nuevaCategoria.NombreCategoria;
+            this.ShowDialog();
         }
     }
 }

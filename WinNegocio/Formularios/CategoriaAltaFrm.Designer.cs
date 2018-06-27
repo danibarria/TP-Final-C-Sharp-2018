@@ -49,7 +49,6 @@
             this.AltaCategoria.Name = "AltaCategoria";
             this.AltaCategoria.Size = new System.Drawing.Size(262, 22);
             this.AltaCategoria.TabIndex = 1;
-            this.AltaCategoria.TextChanged += new System.EventHandler(this.AltaCategoria_TextChanged);
             // 
             // Guardar
             // 
