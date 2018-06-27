@@ -155,10 +155,7 @@
             this.Controls.Add(this.AceptarBtn);
             this.Controls.Add(this.CancelarBtn);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "DetalleOrdenAMFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetalleOrdenAMFrm";
             this.ResumeLayout(false);
             this.PerformLayout();
