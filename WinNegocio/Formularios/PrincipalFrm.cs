@@ -183,6 +183,11 @@ namespace WinNegocio.Formularios
             pbusq.Show();            
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

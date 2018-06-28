@@ -50,26 +50,29 @@
             // CategoriasCbo
             // 
             this.CategoriasCbo.FormattingEnabled = true;
-            this.CategoriasCbo.Location = new System.Drawing.Point(98, 14);
+            this.CategoriasCbo.Location = new System.Drawing.Point(131, 17);
+            this.CategoriasCbo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategoriasCbo.Name = "CategoriasCbo";
-            this.CategoriasCbo.Size = new System.Drawing.Size(159, 21);
+            this.CategoriasCbo.Size = new System.Drawing.Size(211, 24);
             this.CategoriasCbo.TabIndex = 0;
             this.CategoriasCbo.SelectedIndexChanged += new System.EventHandler(this.CategoriasCbo_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 17);
+            this.label1.Location = new System.Drawing.Point(15, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Categorias";
             // 
             // CargarCategoriasBtn
             // 
-            this.CargarCategoriasBtn.Location = new System.Drawing.Point(263, 12);
+            this.CargarCategoriasBtn.Location = new System.Drawing.Point(351, 15);
+            this.CargarCategoriasBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CargarCategoriasBtn.Name = "CargarCategoriasBtn";
-            this.CargarCategoriasBtn.Size = new System.Drawing.Size(73, 24);
+            this.CargarCategoriasBtn.Size = new System.Drawing.Size(97, 30);
             this.CargarCategoriasBtn.TabIndex = 2;
             this.CargarCategoriasBtn.Text = "Cargar";
             this.CargarCategoriasBtn.UseVisualStyleBackColor = true;
@@ -77,9 +80,10 @@
             // 
             // ObraSocialAddBtn
             // 
-            this.ObraSocialAddBtn.Location = new System.Drawing.Point(12, 73);
+            this.ObraSocialAddBtn.Location = new System.Drawing.Point(16, 90);
+            this.ObraSocialAddBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ObraSocialAddBtn.Name = "ObraSocialAddBtn";
-            this.ObraSocialAddBtn.Size = new System.Drawing.Size(111, 39);
+            this.ObraSocialAddBtn.Size = new System.Drawing.Size(148, 48);
             this.ObraSocialAddBtn.TabIndex = 3;
             this.ObraSocialAddBtn.Text = "Prueba de Ingreso de Obj";
             this.ObraSocialAddBtn.UseVisualStyleBackColor = true;
@@ -98,10 +102,11 @@
             this.Precio,
             this.Existencia,
             this.ColCombina});
-            this.gridProducto.Location = new System.Drawing.Point(129, 104);
+            this.gridProducto.Location = new System.Drawing.Point(172, 128);
+            this.gridProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridProducto.Name = "gridProducto";
             this.gridProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProducto.Size = new System.Drawing.Size(658, 126);
+            this.gridProducto.Size = new System.Drawing.Size(877, 155);
             this.gridProducto.TabIndex = 4;
             this.gridProducto.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.gridProducto_DataBindingComplete);
             // 
@@ -149,9 +154,10 @@
             // 
             // CargarGrillaBtn
             // 
-            this.CargarGrillaBtn.Location = new System.Drawing.Point(495, 61);
+            this.CargarGrillaBtn.Location = new System.Drawing.Point(660, 75);
+            this.CargarGrillaBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CargarGrillaBtn.Name = "CargarGrillaBtn";
-            this.CargarGrillaBtn.Size = new System.Drawing.Size(120, 37);
+            this.CargarGrillaBtn.Size = new System.Drawing.Size(160, 46);
             this.CargarGrillaBtn.TabIndex = 5;
             this.CargarGrillaBtn.Text = "Cargar";
             this.CargarGrillaBtn.UseVisualStyleBackColor = true;
@@ -160,25 +166,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(208, 85);
+            this.label2.Location = new System.Drawing.Point(277, 105);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.Size = new System.Drawing.Size(118, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Grilla de  ejemplo";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(303, 247);
+            this.label3.Location = new System.Drawing.Point(404, 304);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(449, 64);
+            this.label3.Size = new System.Drawing.Size(599, 79);
             this.label3.TabIndex = 7;
             this.label3.Text = resources.GetString("label3.Text");
             // 
             // FormTestModel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 464);
+            this.ClientSize = new System.Drawing.Size(1081, 571);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CargarGrillaBtn);
@@ -187,6 +195,9 @@
             this.Controls.Add(this.CargarCategoriasBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CategoriasCbo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormTestModel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTestModel";

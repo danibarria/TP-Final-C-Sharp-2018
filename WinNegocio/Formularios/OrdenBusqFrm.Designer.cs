@@ -50,9 +50,11 @@
             this.groupBox1.Controls.Add(this.ListTodoChk);
             this.groupBox1.Controls.Add(this.EmpleadoIdTxt);
             this.groupBox1.Controls.Add(this.EmpleadoIdChk);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(424, 125);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(565, 154);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criterios";
@@ -60,17 +62,19 @@
             // FechaTxt
             // 
             this.FechaTxt.Enabled = false;
-            this.FechaTxt.Location = new System.Drawing.Point(138, 71);
+            this.FechaTxt.Location = new System.Drawing.Point(184, 87);
+            this.FechaTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FechaTxt.Name = "FechaTxt";
-            this.FechaTxt.Size = new System.Drawing.Size(189, 20);
+            this.FechaTxt.Size = new System.Drawing.Size(251, 22);
             this.FechaTxt.TabIndex = 8;
             // 
             // FechaChk
             // 
             this.FechaChk.AutoSize = true;
-            this.FechaChk.Location = new System.Drawing.Point(27, 71);
+            this.FechaChk.Location = new System.Drawing.Point(36, 87);
+            this.FechaChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FechaChk.Name = "FechaChk";
-            this.FechaChk.Size = new System.Drawing.Size(59, 17);
+            this.FechaChk.Size = new System.Drawing.Size(73, 21);
             this.FechaChk.TabIndex = 7;
             this.FechaChk.Text = "Fecha:";
             this.FechaChk.UseVisualStyleBackColor = true;
@@ -79,17 +83,19 @@
             // ClienteIdTxt
             // 
             this.ClienteIdTxt.Enabled = false;
-            this.ClienteIdTxt.Location = new System.Drawing.Point(138, 45);
+            this.ClienteIdTxt.Location = new System.Drawing.Point(184, 55);
+            this.ClienteIdTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ClienteIdTxt.Name = "ClienteIdTxt";
-            this.ClienteIdTxt.Size = new System.Drawing.Size(189, 20);
+            this.ClienteIdTxt.Size = new System.Drawing.Size(251, 22);
             this.ClienteIdTxt.TabIndex = 6;
             // 
             // ClienteIdChk
             // 
             this.ClienteIdChk.AutoSize = true;
-            this.ClienteIdChk.Location = new System.Drawing.Point(27, 45);
+            this.ClienteIdChk.Location = new System.Drawing.Point(36, 55);
+            this.ClienteIdChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ClienteIdChk.Name = "ClienteIdChk";
-            this.ClienteIdChk.Size = new System.Drawing.Size(73, 17);
+            this.ClienteIdChk.Size = new System.Drawing.Size(92, 21);
             this.ClienteIdChk.TabIndex = 5;
             this.ClienteIdChk.Text = "Cliente Id:";
             this.ClienteIdChk.UseVisualStyleBackColor = true;
@@ -98,9 +104,10 @@
             // ListTodoChk
             // 
             this.ListTodoChk.AutoSize = true;
-            this.ListTodoChk.Location = new System.Drawing.Point(26, 102);
+            this.ListTodoChk.Location = new System.Drawing.Point(35, 126);
+            this.ListTodoChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ListTodoChk.Name = "ListTodoChk";
-            this.ListTodoChk.Size = new System.Drawing.Size(75, 17);
+            this.ListTodoChk.Size = new System.Drawing.Size(97, 21);
             this.ListTodoChk.TabIndex = 4;
             this.ListTodoChk.Text = "Listar todo";
             this.ListTodoChk.UseVisualStyleBackColor = true;
@@ -109,17 +116,19 @@
             // EmpleadoIdTxt
             // 
             this.EmpleadoIdTxt.Enabled = false;
-            this.EmpleadoIdTxt.Location = new System.Drawing.Point(138, 19);
+            this.EmpleadoIdTxt.Location = new System.Drawing.Point(184, 23);
+            this.EmpleadoIdTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EmpleadoIdTxt.Name = "EmpleadoIdTxt";
-            this.EmpleadoIdTxt.Size = new System.Drawing.Size(189, 20);
+            this.EmpleadoIdTxt.Size = new System.Drawing.Size(251, 22);
             this.EmpleadoIdTxt.TabIndex = 3;
             // 
             // EmpleadoIdChk
             // 
             this.EmpleadoIdChk.AutoSize = true;
-            this.EmpleadoIdChk.Location = new System.Drawing.Point(27, 19);
+            this.EmpleadoIdChk.Location = new System.Drawing.Point(36, 23);
+            this.EmpleadoIdChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EmpleadoIdChk.Name = "EmpleadoIdChk";
-            this.EmpleadoIdChk.Size = new System.Drawing.Size(88, 17);
+            this.EmpleadoIdChk.Size = new System.Drawing.Size(112, 21);
             this.EmpleadoIdChk.TabIndex = 2;
             this.EmpleadoIdChk.Text = "Empleado Id:";
             this.EmpleadoIdChk.UseVisualStyleBackColor = true;
@@ -127,9 +136,10 @@
             // 
             // CancelarBtn
             // 
-            this.CancelarBtn.Location = new System.Drawing.Point(356, 154);
+            this.CancelarBtn.Location = new System.Drawing.Point(475, 190);
+            this.CancelarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelarBtn.Name = "CancelarBtn";
-            this.CancelarBtn.Size = new System.Drawing.Size(80, 28);
+            this.CancelarBtn.Size = new System.Drawing.Size(107, 34);
             this.CancelarBtn.TabIndex = 6;
             this.CancelarBtn.Text = "Cerrar";
             this.CancelarBtn.UseVisualStyleBackColor = true;
@@ -137,9 +147,10 @@
             // 
             // BuscarBtn
             // 
-            this.BuscarBtn.Location = new System.Drawing.Point(211, 153);
+            this.BuscarBtn.Location = new System.Drawing.Point(281, 188);
+            this.BuscarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuscarBtn.Name = "BuscarBtn";
-            this.BuscarBtn.Size = new System.Drawing.Size(83, 29);
+            this.BuscarBtn.Size = new System.Drawing.Size(111, 36);
             this.BuscarBtn.TabIndex = 5;
             this.BuscarBtn.Text = "Buscar";
             this.BuscarBtn.UseVisualStyleBackColor = true;
@@ -147,13 +158,17 @@
             // 
             // OrdenBusqFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 204);
+            this.ClientSize = new System.Drawing.Size(601, 251);
             this.Controls.Add(this.CancelarBtn);
             this.Controls.Add(this.BuscarBtn);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "OrdenBusqFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrdenBusqFrm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

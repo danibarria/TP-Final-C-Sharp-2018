@@ -84,8 +84,11 @@
             this.Controls.Add(this.nombreCheck);
             this.Controls.Add(this.BuscarBtn);
             this.Controls.Add(this.listarCheck);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CategoriaBusqFrm";
-            this.Text = "Categoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Buscar Categoria";
             this.ResumeLayout(false);
             this.PerformLayout();
 

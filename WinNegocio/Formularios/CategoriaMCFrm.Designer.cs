@@ -128,7 +128,7 @@
             this.ClientSize = new System.Drawing.Size(830, 520);
             this.Controls.Add(this.dataGridView1);
             this.Name = "CategoriaMCFrm";
-            this.Text = "Form1";
+            this.Text = "Listado Categoria";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriaBindingSource)).EndInit();
