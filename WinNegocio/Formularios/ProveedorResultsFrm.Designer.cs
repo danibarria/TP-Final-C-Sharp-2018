@@ -45,11 +45,12 @@
             this.ContactoProv,
             this.CeluProv,
             this.FijoProv});
-            this.gridProveedor.Location = new System.Drawing.Point(2, 12);
+            this.gridProveedor.Location = new System.Drawing.Point(3, 15);
+            this.gridProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridProveedor.Name = "gridProveedor";
             this.gridProveedor.ReadOnly = true;
             this.gridProveedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProveedor.Size = new System.Drawing.Size(625, 316);
+            this.gridProveedor.Size = new System.Drawing.Size(833, 389);
             this.gridProveedor.TabIndex = 0;
             this.gridProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProveedor_CellContentClick);
             this.gridProveedor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProveedor_CellDoubleClick);
@@ -85,9 +86,10 @@
             // 
             // CerrarBtn
             // 
-            this.CerrarBtn.Location = new System.Drawing.Point(498, 367);
+            this.CerrarBtn.Location = new System.Drawing.Point(664, 452);
+            this.CerrarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CerrarBtn.Name = "CerrarBtn";
-            this.CerrarBtn.Size = new System.Drawing.Size(84, 27);
+            this.CerrarBtn.Size = new System.Drawing.Size(112, 33);
             this.CerrarBtn.TabIndex = 15;
             this.CerrarBtn.Text = "Cerrar";
             this.CerrarBtn.UseVisualStyleBackColor = true;
@@ -95,12 +97,16 @@
             // 
             // ProveedorResultsFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 406);
+            this.ClientSize = new System.Drawing.Size(852, 500);
             this.Controls.Add(this.CerrarBtn);
             this.Controls.Add(this.gridProveedor);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ProveedorResultsFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProveedorResultsFrm";
             ((System.ComponentModel.ISupportInitialize)(this.gridProveedor)).EndInit();
             this.ResumeLayout(false);

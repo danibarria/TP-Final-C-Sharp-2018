@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ExtensionTxt = new System.Windows.Forms.TextBox();
+            this.ExtensionChk = new System.Windows.Forms.CheckBox();
+            this.ReportaATxt = new System.Windows.Forms.TextBox();
+            this.ReportaAChk = new System.Windows.Forms.CheckBox();
             this.ApellidoTxt = new System.Windows.Forms.TextBox();
             this.ApellidoChk = new System.Windows.Forms.CheckBox();
             this.ListTodoChk = new System.Windows.Forms.CheckBox();
@@ -36,10 +40,6 @@
             this.NombreChk = new System.Windows.Forms.CheckBox();
             this.BuscarBtn = new System.Windows.Forms.Button();
             this.CancelarBtn = new System.Windows.Forms.Button();
-            this.ReportaATxt = new System.Windows.Forms.TextBox();
-            this.ReportaAChk = new System.Windows.Forms.CheckBox();
-            this.ExtensionTxt = new System.Windows.Forms.TextBox();
-            this.ExtensionChk = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,27 +54,73 @@
             this.groupBox1.Controls.Add(this.ListTodoChk);
             this.groupBox1.Controls.Add(this.NombreTxt);
             this.groupBox1.Controls.Add(this.NombreChk);
-            this.groupBox1.Location = new System.Drawing.Point(12, 2);
+            this.groupBox1.Location = new System.Drawing.Point(16, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(424, 146);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(565, 180);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criterios";
             // 
+            // ExtensionTxt
+            // 
+            this.ExtensionTxt.Enabled = false;
+            this.ExtensionTxt.Location = new System.Drawing.Point(152, 119);
+            this.ExtensionTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtensionTxt.Name = "ExtensionTxt";
+            this.ExtensionTxt.Size = new System.Drawing.Size(251, 22);
+            this.ExtensionTxt.TabIndex = 10;
+            // 
+            // ExtensionChk
+            // 
+            this.ExtensionChk.AutoSize = true;
+            this.ExtensionChk.Location = new System.Drawing.Point(33, 119);
+            this.ExtensionChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtensionChk.Name = "ExtensionChk";
+            this.ExtensionChk.Size = new System.Drawing.Size(95, 21);
+            this.ExtensionChk.TabIndex = 9;
+            this.ExtensionChk.Text = "Extension:";
+            this.ExtensionChk.UseVisualStyleBackColor = true;
+            this.ExtensionChk.CheckedChanged += new System.EventHandler(this.ExtensionChk_CheckedChanged);
+            // 
+            // ReportaATxt
+            // 
+            this.ReportaATxt.Enabled = false;
+            this.ReportaATxt.Location = new System.Drawing.Point(152, 87);
+            this.ReportaATxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ReportaATxt.Name = "ReportaATxt";
+            this.ReportaATxt.Size = new System.Drawing.Size(251, 22);
+            this.ReportaATxt.TabIndex = 8;
+            // 
+            // ReportaAChk
+            // 
+            this.ReportaAChk.AutoSize = true;
+            this.ReportaAChk.Location = new System.Drawing.Point(33, 87);
+            this.ReportaAChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ReportaAChk.Name = "ReportaAChk";
+            this.ReportaAChk.Size = new System.Drawing.Size(97, 21);
+            this.ReportaAChk.TabIndex = 7;
+            this.ReportaAChk.Text = "Reporta a:";
+            this.ReportaAChk.UseVisualStyleBackColor = true;
+            this.ReportaAChk.CheckedChanged += new System.EventHandler(this.ReportaAChk_CheckedChanged);
+            // 
             // ApellidoTxt
             // 
             this.ApellidoTxt.Enabled = false;
-            this.ApellidoTxt.Location = new System.Drawing.Point(114, 45);
+            this.ApellidoTxt.Location = new System.Drawing.Point(152, 55);
+            this.ApellidoTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ApellidoTxt.Name = "ApellidoTxt";
-            this.ApellidoTxt.Size = new System.Drawing.Size(189, 20);
+            this.ApellidoTxt.Size = new System.Drawing.Size(251, 22);
             this.ApellidoTxt.TabIndex = 6;
             // 
             // ApellidoChk
             // 
             this.ApellidoChk.AutoSize = true;
-            this.ApellidoChk.Location = new System.Drawing.Point(25, 45);
+            this.ApellidoChk.Location = new System.Drawing.Point(33, 55);
+            this.ApellidoChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ApellidoChk.Name = "ApellidoChk";
-            this.ApellidoChk.Size = new System.Drawing.Size(66, 17);
+            this.ApellidoChk.Size = new System.Drawing.Size(84, 21);
             this.ApellidoChk.TabIndex = 5;
             this.ApellidoChk.Text = "Apellido:";
             this.ApellidoChk.UseVisualStyleBackColor = true;
@@ -83,9 +129,10 @@
             // ListTodoChk
             // 
             this.ListTodoChk.AutoSize = true;
-            this.ListTodoChk.Location = new System.Drawing.Point(26, 120);
+            this.ListTodoChk.Location = new System.Drawing.Point(35, 148);
+            this.ListTodoChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ListTodoChk.Name = "ListTodoChk";
-            this.ListTodoChk.Size = new System.Drawing.Size(75, 17);
+            this.ListTodoChk.Size = new System.Drawing.Size(97, 21);
             this.ListTodoChk.TabIndex = 4;
             this.ListTodoChk.Text = "Listar todo";
             this.ListTodoChk.UseVisualStyleBackColor = true;
@@ -94,17 +141,19 @@
             // NombreTxt
             // 
             this.NombreTxt.Enabled = false;
-            this.NombreTxt.Location = new System.Drawing.Point(114, 19);
+            this.NombreTxt.Location = new System.Drawing.Point(152, 23);
+            this.NombreTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NombreTxt.Name = "NombreTxt";
-            this.NombreTxt.Size = new System.Drawing.Size(189, 20);
+            this.NombreTxt.Size = new System.Drawing.Size(251, 22);
             this.NombreTxt.TabIndex = 3;
             // 
             // NombreChk
             // 
             this.NombreChk.AutoSize = true;
-            this.NombreChk.Location = new System.Drawing.Point(25, 19);
+            this.NombreChk.Location = new System.Drawing.Point(33, 23);
+            this.NombreChk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NombreChk.Name = "NombreChk";
-            this.NombreChk.Size = new System.Drawing.Size(66, 17);
+            this.NombreChk.Size = new System.Drawing.Size(84, 21);
             this.NombreChk.TabIndex = 2;
             this.NombreChk.Text = "Nombre:";
             this.NombreChk.UseVisualStyleBackColor = true;
@@ -112,9 +161,10 @@
             // 
             // BuscarBtn
             // 
-            this.BuscarBtn.Location = new System.Drawing.Point(212, 163);
+            this.BuscarBtn.Location = new System.Drawing.Point(283, 201);
+            this.BuscarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BuscarBtn.Name = "BuscarBtn";
-            this.BuscarBtn.Size = new System.Drawing.Size(83, 29);
+            this.BuscarBtn.Size = new System.Drawing.Size(111, 36);
             this.BuscarBtn.TabIndex = 5;
             this.BuscarBtn.Text = "Buscar";
             this.BuscarBtn.UseVisualStyleBackColor = true;
@@ -122,61 +172,28 @@
             // 
             // CancelarBtn
             // 
-            this.CancelarBtn.Location = new System.Drawing.Point(356, 164);
+            this.CancelarBtn.Location = new System.Drawing.Point(475, 202);
+            this.CancelarBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelarBtn.Name = "CancelarBtn";
-            this.CancelarBtn.Size = new System.Drawing.Size(80, 28);
+            this.CancelarBtn.Size = new System.Drawing.Size(107, 34);
             this.CancelarBtn.TabIndex = 6;
             this.CancelarBtn.Text = "Cerrar";
             this.CancelarBtn.UseVisualStyleBackColor = true;
             this.CancelarBtn.Click += new System.EventHandler(this.CancelarBtn_Click);
             // 
-            // ReportaATxt
-            // 
-            this.ReportaATxt.Enabled = false;
-            this.ReportaATxt.Location = new System.Drawing.Point(114, 71);
-            this.ReportaATxt.Name = "ReportaATxt";
-            this.ReportaATxt.Size = new System.Drawing.Size(189, 20);
-            this.ReportaATxt.TabIndex = 8;
-            // 
-            // ReportaAChk
-            // 
-            this.ReportaAChk.AutoSize = true;
-            this.ReportaAChk.Location = new System.Drawing.Point(25, 71);
-            this.ReportaAChk.Name = "ReportaAChk";
-            this.ReportaAChk.Size = new System.Drawing.Size(76, 17);
-            this.ReportaAChk.TabIndex = 7;
-            this.ReportaAChk.Text = "Reporta a:";
-            this.ReportaAChk.UseVisualStyleBackColor = true;
-            this.ReportaAChk.CheckedChanged += new System.EventHandler(this.ReportaAChk_CheckedChanged);
-            // 
-            // ExtensionTxt
-            // 
-            this.ExtensionTxt.Enabled = false;
-            this.ExtensionTxt.Location = new System.Drawing.Point(114, 97);
-            this.ExtensionTxt.Name = "ExtensionTxt";
-            this.ExtensionTxt.Size = new System.Drawing.Size(189, 20);
-            this.ExtensionTxt.TabIndex = 10;
-            // 
-            // ExtensionChk
-            // 
-            this.ExtensionChk.AutoSize = true;
-            this.ExtensionChk.Location = new System.Drawing.Point(25, 97);
-            this.ExtensionChk.Name = "ExtensionChk";
-            this.ExtensionChk.Size = new System.Drawing.Size(75, 17);
-            this.ExtensionChk.TabIndex = 9;
-            this.ExtensionChk.Text = "Extension:";
-            this.ExtensionChk.UseVisualStyleBackColor = true;
-            this.ExtensionChk.CheckedChanged += new System.EventHandler(this.ExtensionChk_CheckedChanged);
-            // 
             // EmpleadoBusqFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 204);
+            this.ClientSize = new System.Drawing.Size(601, 251);
             this.Controls.Add(this.CancelarBtn);
             this.Controls.Add(this.BuscarBtn);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "EmpleadoBusqFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmpleadoBusqFrm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
