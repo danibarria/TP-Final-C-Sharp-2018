@@ -13,6 +13,19 @@ namespace WinNegocio.Formularios
 {
     public partial class PrincipalFrm : Form
     {
+        public static bool ValidarNumero(string numero)
+        {
+            try
+            {
+                System.Convert.ToInt32(numero, 10);
+                return true;
+            }
+            catch (Exception) 
+            {
+                return false;
+            }
+        }
+
         public PrincipalFrm()
         {            
             InitializeComponent();

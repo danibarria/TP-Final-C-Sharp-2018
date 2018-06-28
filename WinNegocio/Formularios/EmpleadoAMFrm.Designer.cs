@@ -132,6 +132,7 @@
             this.ExtensionTxt.Name = "ExtensionTxt";
             this.ExtensionTxt.Size = new System.Drawing.Size(151, 20);
             this.ExtensionTxt.TabIndex = 13;
+            this.ExtensionTxt.Leave += new System.EventHandler(this.ExtensionTxt_Leave);
             // 
             // label5
             // 

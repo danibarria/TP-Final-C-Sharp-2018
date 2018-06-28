@@ -15,6 +15,7 @@ namespace WinNegocio.Formularios
         OperacionForm operacion = OperacionForm.frmModificacion;
         IFormGridReload _frmGrid;
 
+        private bool _val=false;
         Producto prod;
         public ProductoAMFrm()
         {
@@ -71,6 +72,8 @@ namespace WinNegocio.Formularios
                 prod.PrecioUnitario = Convert.ToDouble(this.PrecioUnitarioTxt.Text);
                 prod.Existencia = System.Convert.ToInt32(this.ExistenciaTxt.Text, 10);
 
+                if (!this._val)
+                    return;
                 if (!prod.saveObj())
                 {
                     MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nuevo Producto" : "Error al intentar editar informacion de Producto", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -100,6 +103,41 @@ namespace WinNegocio.Formularios
             Categoria c = new Categoria();
             c = (this.CategoriaCbo.SelectedItem as Categoria);
             this.IdCategoriaTxt.Text = c.CategoriaId.ToString();
+        }
+
+        private void ExistenciaTxt_Leave(object sender, EventArgs e)
+        {
+            if (!PrincipalFrm.ValidarNumero(ExistenciaTxt.Text))
+            {
+                ExistenciaTxt.Focus();
+                ExistenciaTxt.BackColor = System.Drawing.Color.IndianRed;
+                this._val = false;
+            }
+            else
+            {
+                ExistenciaTxt.BackColor = System.Drawing.Color.White;
+                this._val = true;
+            }
+        }
+
+        private void PrecioUnitarioTxt_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void PrecioUnitarioTxt_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                Convert.ToDouble(this.PrecioUnitarioTxt.Text);
+                this._val = true;
+                PrecioUnitarioTxt.BackColor = System.Drawing.Color.White;
+            }
+            catch (Exception)
+            {
+                PrecioUnitarioTxt.Focus();
+                PrecioUnitarioTxt.BackColor = System.Drawing.Color.IndianRed;
+                this._val = false;
+            }
         }
 
     }
