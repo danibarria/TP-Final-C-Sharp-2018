@@ -88,3 +88,9 @@ C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.F
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaBusqFrm.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaMCFrm.resources
 C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.CategoriaResultsFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.csprojResolveAssemblyReference.cache
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.DetalleOrdenAMFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.OrdenAMFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.OrdenBusqFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.OrdenDetalleResultsFrm.resources
+C:\Users\equipo\Desktop\TP-final-C-sharp\WinNegocio\obj\x86\Release\WinNegocio.Formularios.OrdenResultsFrm.resources
