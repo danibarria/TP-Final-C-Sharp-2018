@@ -15,6 +15,7 @@ namespace WinNegocio.Formularios
         OperacionForm operacion = OperacionForm.frmConsulta;
         IFormGridReload _frmGrid;
         DetalleOrden dOrd;
+        private bool _val=false;
         private string _det=null;
         private string _ord = null;
         public string Detalle 
@@ -84,7 +85,9 @@ namespace WinNegocio.Formularios
                     dOrd.ProductoId = System.Convert.ToInt32(this.ProductoIdTxt.Text, 10);
                     dOrd.Cantidad = System.Convert.ToInt32(this.CantidadTxt.Text, 10);
                 }
-
+                if(!this._val){
+                    return;
+                }
                 if (!dOrd.saveObj())
                 {
                     MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nuevo DetalleOrde" : "Error al intentar editar informacion de DetalleOrden", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -107,6 +110,21 @@ namespace WinNegocio.Formularios
             p = (this.ProductoCbo.SelectedItem as Producto);
             this.ProductoIdTxt.Text = p.ProductoId.ToString();
             //this.ProductoIdTxt.Text;
+        }
+
+        private void CantidadTxt_Leave(object sender, EventArgs e)
+        {
+            if (!PrincipalFrm.ValidarNumero(CantidadTxt.Text))
+            {
+                CantidadTxt.Focus();
+                CantidadTxt.BackColor = System.Drawing.Color.IndianRed;
+                this._val = false;
+            }
+            else
+            {
+                CantidadTxt.BackColor = System.Drawing.Color.White;
+                this._val = true;
+            }
         }
 
 

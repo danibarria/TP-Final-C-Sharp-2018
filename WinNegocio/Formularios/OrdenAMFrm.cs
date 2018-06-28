@@ -14,7 +14,7 @@ namespace WinNegocio.Formularios
     {
         OperacionForm operacion = OperacionForm.frmConsulta;
         IFormGridReload _frmGrid;
-
+        private bool _val=false;
         Orden ord;
         public OrdenAMFrm()
         {
@@ -71,6 +71,8 @@ namespace WinNegocio.Formularios
                 ord.ClienteId = Convert.ToInt32(this.ClienteTxt.Text,10);
                 ord.FechaOrden = Convert.ToDateTime(this.FechaTxt.Text);
                 ord.Descuento = Convert.ToInt32(this.DescuentoTxt.Text, 10);
+                if (!this._val)
+                    return;
                 if (!ord.saveObj())
                 {
                     MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nueva Orden" : "Error al intentar editar informacion de Orden", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -99,6 +101,21 @@ namespace WinNegocio.Formularios
             Cliente p = new Cliente();
             p = (this.ClienteCbo.SelectedItem as Cliente);
             this.ClienteTxt.Text = p.ClienteId.ToString();
+        }
+
+        private void DescuentoTxt_Leave(object sender, EventArgs e)
+        {
+            if (!PrincipalFrm.ValidarNumero(DescuentoTxt.Text))
+            {
+                DescuentoTxt.Focus();
+                DescuentoTxt.BackColor = System.Drawing.Color.IndianRed;
+                this._val = false;
+            }
+            else
+            {
+                DescuentoTxt.BackColor = System.Drawing.Color.White;
+                this._val = true;
+            }
         }
     }
 }

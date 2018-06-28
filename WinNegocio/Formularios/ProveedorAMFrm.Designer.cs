@@ -116,6 +116,7 @@
             this.CelularTxt.Name = "CelularTxt";
             this.CelularTxt.Size = new System.Drawing.Size(151, 20);
             this.CelularTxt.TabIndex = 8;
+            this.CelularTxt.Leave += new System.EventHandler(this.CelularTxt_Leave);
             // 
             // FijoTxt
             // 
@@ -123,6 +124,7 @@
             this.FijoTxt.Name = "FijoTxt";
             this.FijoTxt.Size = new System.Drawing.Size(151, 20);
             this.FijoTxt.TabIndex = 9;
+            this.FijoTxt.Leave += new System.EventHandler(this.FijoTxt_Leave);
             // 
             // AceptarBtn
             // 

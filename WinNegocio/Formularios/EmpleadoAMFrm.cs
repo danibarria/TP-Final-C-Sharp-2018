@@ -15,6 +15,7 @@ namespace WinNegocio.Formularios
         IFormGridReload _frmGrid;
 
         Empleado emp;
+        private bool _val=false;
         public EmpleadoAMFrm()
         {
             InitializeComponent();
@@ -64,7 +65,9 @@ namespace WinNegocio.Formularios
                     emp.ReportaA = Convert.ToInt32(this.ReportarATxt.Text, 10);
                 else
                     emp.ReportaA = 0;
-                emp.Extension = Convert.ToInt32(this.ExtensionTxt.Text, 10); 
+                emp.Extension = Convert.ToInt32(this.ExtensionTxt.Text, 10);
+                if (!this._val)
+                    return;
                 if (!emp.saveObj())
                 {
                     MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nuevo Empleado" : "Error al intentar editar informacion de Empleado", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -84,6 +87,21 @@ namespace WinNegocio.Formularios
         private void EmpleadoAMFrm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void ExtensionTxt_Leave(object sender, EventArgs e)
+        {
+            if (!PrincipalFrm.ValidarNumero(ExtensionTxt.Text))
+            {
+                ExtensionTxt.Focus();
+                ExtensionTxt.BackColor = System.Drawing.Color.IndianRed;
+                this._val = false;
+            }
+            else
+            {
+                ExtensionTxt.BackColor = System.Drawing.Color.White;
+                this._val = true;
+            }
         }
     }
 }

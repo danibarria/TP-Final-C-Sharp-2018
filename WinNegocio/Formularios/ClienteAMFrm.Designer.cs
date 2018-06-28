@@ -65,6 +65,8 @@
             this.CedulaRucTxt.Name = "CedulaRucTxt";
             this.CedulaRucTxt.Size = new System.Drawing.Size(143, 20);
             this.CedulaRucTxt.TabIndex = 3;
+            this.CedulaRucTxt.Leave += new System.EventHandler(this.CedulaRucTxt_Leave);
+            this.CedulaRucTxt.Validated += new System.EventHandler(this.CedulaRucTxt_Validated);
             // 
             // label2
             // 
@@ -175,6 +177,7 @@
             this.CelularTxt.Name = "CelularTxt";
             this.CelularTxt.Size = new System.Drawing.Size(143, 20);
             this.CelularTxt.TabIndex = 10;
+            this.CelularTxt.Leave += new System.EventHandler(this.CelularTxt_Leave);
             // 
             // label7
             // 
@@ -191,6 +194,7 @@
             this.FijoTxt.Name = "FijoTxt";
             this.FijoTxt.Size = new System.Drawing.Size(143, 20);
             this.FijoTxt.TabIndex = 11;
+            this.FijoTxt.Leave += new System.EventHandler(this.FijoTxt_Leave);
             // 
             // label8
             // 
@@ -216,6 +220,7 @@
             this.FaxTxt.Name = "FaxTxt";
             this.FaxTxt.Size = new System.Drawing.Size(141, 20);
             this.FaxTxt.TabIndex = 24;
+            this.FaxTxt.Leave += new System.EventHandler(this.FaxTxt_Leave);
             // 
             // ClienteAMFrm
             // 

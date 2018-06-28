@@ -16,6 +16,7 @@ namespace WinNegocio.Formularios
         OperacionForm operacion = OperacionForm.frmConsulta;
         IFormGridReload _frmGrid;
 
+        private bool _val= false;
         Proveedor prov;
         public ProveedorAMFrm()
         {
@@ -63,6 +64,8 @@ namespace WinNegocio.Formularios
                 prov.ContactoProveedor = this.ContactoTxt.Text;
                 prov.CeluProveedor = this.CelularTxt.Text;
                 prov.FijoProveedor = this.FijoTxt.Text;
+                if (!this._val)
+                    return;
                 if (!prov.saveObj())
                 {
                     MessageBox.Show(operacion == OperacionForm.frmAlta ? "Error al intentar ingresar nuevo Proveedor" : "Error al intentar editar informacion de Proveedor", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -77,6 +80,36 @@ namespace WinNegocio.Formularios
             }
             //_frmGrid.ReloadGrid();
             this.Dispose();
+        }
+
+        private void CelularTxt_Leave(object sender, EventArgs e)
+        {
+            if (!PrincipalFrm.ValidarNumero(CelularTxt.Text))
+            {
+                CelularTxt.Focus();
+                CelularTxt.BackColor = System.Drawing.Color.IndianRed;
+                this._val = false;
+            }
+            else
+            {
+                CelularTxt.BackColor = System.Drawing.Color.White;
+                this._val = true;
+            }
+        }
+
+        private void FijoTxt_Leave(object sender, EventArgs e)
+        {
+            if (!PrincipalFrm.ValidarNumero(FijoTxt.Text))
+            {
+                FijoTxt.Focus();
+                FijoTxt.BackColor = System.Drawing.Color.IndianRed;
+                this._val = false;
+            }
+            else
+            {
+                FijoTxt.BackColor = System.Drawing.Color.White;
+                this._val = true;
+            }
         }
 
   
